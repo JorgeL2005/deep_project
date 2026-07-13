@@ -1,0 +1,21 @@
+# === Requisitos ADICIONALES para ENTRENAR (destilacion BC+DAgger y PPO) ===
+# Instalar DESPUES de requirements.txt:
+#     python -m pip install -r requirements-train.txt
+#
+# torch NO se instala desde PyPI aqui porque la build depende del hardware.
+# Elige UNA de las dos opciones:
+#
+#   GPU NVIDIA (CUDA 12.x), como la RTX 3060 usada en este proyecto:
+#     python -m pip install torch --index-url https://download.pytorch.org/whl/cu126
+#
+#   Solo CPU (mas lento; sirve para inferencia/pruebas):
+#     python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# Version de referencia usada aqui: torch 2.13.0+cu126
+#
+# En Windows, si la instalacion de torch falla por rutas demasiado largas
+# (WinError 206), crea un venv de ruta corta e instala ahi:
+#     python -m venv --system-site-packages C:\vt
+#     C:\vt\Scripts\python -m pip install torch --index-url https://download.pytorch.org/whl/cu126
+
+torch   # instalar con el index-url correcto (ver arriba); no dejar que tome la build por defecto de PyPI

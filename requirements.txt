@@ -1,0 +1,16 @@
+# === Requisitos para EJECUTAR y EVALUAR el agente (sin entrenar) ===
+# Probado con Python 3.13 en Windows 11. Instalar con:
+#     python -m pip install -r requirements.txt
+#
+# NOTA: el agente entregable (policies/student_agent_bc.py) por si solo SOLO
+# necesita numpy. El resto de paquetes son para el entorno Overcooked-AI y el
+# runner del proyecto (src/).
+
+numpy>=2.0,<3.0        # el fork Overcooked-AI fue parcheado para NumPy 2.x
+scipy>=1.11            # usado por los planners de overcooked_ai_py
+gym==0.26.2            # requerido por overcooked_ai_py/__init__.py
+pygame>=2.5            # render de la ventana de juego
+PyYAML>=6.0           # carga de configs .yaml
+imageio>=2.30          # guardado de GIFs / render
+ipywidgets>=8.0        # importado por overcooked_ai_py.visualization
+tqdm>=4.60             # barras de progreso (utilidades del fork)
