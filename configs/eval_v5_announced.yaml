@@ -1,0 +1,55 @@
+# Evaluacion del v5 contra los perfiles de companero ANUNCIADOS por el profesor.
+# Escenarios:
+#   coordination_ring -> greedy con sticky actions       (sticky_action_prob)
+#   counter_circuit   -> greedy con sticky + random      (sticky + random_action_prob)
+#   asymmetric_advantages -> (perfil no anunciado; usa el que quieras)
+# Cambia layout_name y las probs de agent_1 segun el escenario a probar.
+seed: 67
+mode: evaluation
+environment:
+  layout_name: coordination_ring
+  layout_file: null
+  horizon: 400
+  old_dynamics: true
+policies:
+  agent_0:
+    type: python_class
+    path: policies/student_agent_bc.py
+    class_name: StudentAgent
+    name: student_bc_v5
+    config:
+      seed: 0
+      weights: bc_weights_v5.npz
+    random_action_prob: 0.0
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+  agent_1:
+    type: builtin
+    name: greedy_full_task
+    ingredient: onion
+    avoid_teammate: true
+    sticky_action_prob: 0.3    # <- sticky actions
+    random_action_prob: 0.0    # <- sube a 0.15 para el perfil de counter_circuit
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+execution:
+  num_episodes: 3
+  episode_seeds:
+  - 0
+  - 1
+  - 2
+  swap_agent_positions: true
+observation:
+  type: lossless_grid
+  include_agent_index: true
+rendering:
+  mode: none    # pon "window" (y fps: 8) para VERLO jugar
+  fps: 0
+  save_gif: false
+logging:
+  output_dir: outputs/eval_v5_announced
+  save_step_log: false
+  save_episode_summary: true
+  save_trajectory_pickle: false

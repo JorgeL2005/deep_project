@@ -1,7 +1,7 @@
 seed: 67
 mode: debug
 environment:
-  layout_name: asymmetric_advantages    # cambia aqui el layout que quieras ver
+  layout_name: counter_circuit    # cambia aqui el layout que quieras ver
   layout_file: null           # o pon una ruta .layout custom (y layout_name: null)
   horizon: 400
   old_dynamics: true
@@ -14,7 +14,7 @@ policies:
     config:
       seed: 0
       weights: bc_weights_v5.npz
-    random_action_prob: 0.0
+    random_action_prob: 0.0    
     max_action_time_ms: 100
     invalid_action: stay
     timeout_action: stay
@@ -23,7 +23,8 @@ policies:
     name: greedy_full_task
     ingredient: onion
     avoid_teammate: true
-    random_action_prob: 0.0
+    sticky_action_prob: 0.3    # <- sticky actions
+    random_action_prob: 0.2
     max_action_time_ms: 100
     invalid_action: stay
     timeout_action: stay
@@ -31,7 +32,7 @@ execution:
   num_episodes: 1
   episode_seeds:
   - 0
-  swap_agent_positions: true
+  swap_agent_positions: false
 observation:
   type: lossless_grid
   include_agent_index: true
