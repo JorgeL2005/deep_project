@@ -1,0 +1,7 @@
+ep_length,ep_shaped_r,ep_sparse_r,episode_id,layout_name,return_sparse,role_swap,seed
+400,34,40,0,cramped_room,40.0,False,0
+400,51,60,1,cramped_room,60.0,True,0
+400,34,40,2,cramped_room,40.0,False,1
+400,51,60,3,cramped_room,60.0,True,1
+400,34,40,4,cramped_room,40.0,False,2
+400,51,60,5,cramped_room,60.0,True,2

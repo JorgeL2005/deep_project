@@ -1,0 +1,422 @@
+{
+ "cramped_room | self": {
+  "mean": 140.0,
+  "returns": [
+   140.0,
+   140.0,
+   140.0
+  ]
+ },
+ "cramped_room | greedy_full_task": {
+  "mean": 170.0,
+  "returns": [
+   120.0,
+   120.0,
+   120.0,
+   220.0,
+   220.0,
+   220.0
+  ]
+ },
+ "cramped_room | random_motion": {
+  "mean": 136.66666666666666,
+  "returns": [
+   160.0,
+   120.0,
+   100.0,
+   160.0,
+   160.0,
+   120.0
+  ]
+ },
+ "coordination_ring | self": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "coordination_ring | greedy_full_task": {
+  "mean": 20.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   40.0,
+   40.0,
+   40.0
+  ]
+ },
+ "coordination_ring | random_motion": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "counter_circuit | self": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "counter_circuit | greedy_full_task": {
+  "mean": 95.5,
+  "returns": [
+   123.0,
+   123.0,
+   123.0,
+   68.0,
+   68.0,
+   68.0
+  ]
+ },
+ "counter_circuit | random_motion": {
+  "mean": 56.666666666666664,
+  "returns": [
+   204.0,
+   68.0,
+   0.0,
+   0.0,
+   0.0,
+   68.0
+  ]
+ },
+ "forced_coordination | self": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "forced_coordination | greedy_full_task": {
+  "mean": 20.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   40.0,
+   40.0,
+   40.0
+  ]
+ },
+ "forced_coordination | random_motion": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "asymmetric_advantages | self": {
+  "mean": 40.0,
+  "returns": [
+   40.0,
+   40.0,
+   40.0
+  ]
+ },
+ "asymmetric_advantages | greedy_full_task": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "asymmetric_advantages | random_motion": {
+  "mean": 113.33333333333333,
+  "returns": [
+   180.0,
+   180.0,
+   0.0,
+   140.0,
+   40.0,
+   140.0
+  ]
+ },
+ "large_room | self": {
+  "mean": 60.0,
+  "returns": [
+   60.0,
+   60.0,
+   60.0
+  ]
+ },
+ "large_room | greedy_full_task": {
+  "mean": 50.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   100.0,
+   100.0,
+   100.0
+  ]
+ },
+ "large_room | random_motion": {
+  "mean": 66.66666666666667,
+  "returns": [
+   20.0,
+   40.0,
+   120.0,
+   120.0,
+   40.0,
+   60.0
+  ]
+ },
+ "simple_o | self": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "simple_o | greedy_full_task": {
+  "mean": 80.0,
+  "returns": [
+   80.0,
+   80.0,
+   80.0,
+   80.0,
+   80.0,
+   80.0
+  ]
+ },
+ "simple_o | random_motion": {
+  "mean": 90.0,
+  "returns": [
+   180.0,
+   40.0,
+   160.0,
+   20.0,
+   120.0,
+   20.0
+  ]
+ },
+ "simple_tomato | self": {
+  "mean": 40.0,
+  "returns": [
+   40.0,
+   40.0,
+   40.0
+  ]
+ },
+ "simple_tomato | greedy_full_task": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "simple_tomato | random_motion": {
+  "mean": 133.33333333333334,
+  "returns": [
+   140.0,
+   120.0,
+   80.0,
+   140.0,
+   160.0,
+   160.0
+  ]
+ },
+ "small_corridor | self": {
+  "mean": 20.0,
+  "returns": [
+   20.0,
+   20.0,
+   20.0
+  ]
+ },
+ "small_corridor | greedy_full_task": {
+  "mean": 20.0,
+  "returns": [
+   20.0,
+   20.0,
+   20.0,
+   20.0,
+   20.0,
+   20.0
+  ]
+ },
+ "small_corridor | random_motion": {
+  "mean": 3.3333333333333335,
+  "returns": [
+   0.0,
+   20.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "soup_coordination | self": {
+  "mean": 130.0,
+  "returns": [
+   130.0,
+   130.0,
+   130.0
+  ]
+ },
+ "soup_coordination | greedy_full_task": {
+  "mean": 173.0,
+  "returns": [
+   320.0,
+   320.0,
+   320.0,
+   26.0,
+   26.0,
+   26.0
+  ]
+ },
+ "soup_coordination | random_motion": {
+  "mean": 342.3333333333333,
+  "returns": [
+   468.0,
+   468.0,
+   416.0,
+   78.0,
+   156.0,
+   468.0
+  ]
+ },
+ "tutorial_0 | self": {
+  "mean": 441.0,
+  "returns": [
+   441.0,
+   441.0,
+   441.0
+  ]
+ },
+ "tutorial_0 | greedy_full_task": {
+  "mean": 630.0,
+  "returns": [
+   630.0,
+   630.0,
+   630.0,
+   630.0,
+   630.0,
+   630.0
+  ]
+ },
+ "tutorial_0 | random_motion": {
+  "mean": 210.0,
+  "returns": [
+   315.0,
+   126.0,
+   252.0,
+   252.0,
+   252.0,
+   63.0
+  ]
+ },
+ "tutorial_1 | self": {
+  "mean": 68.0,
+  "returns": [
+   68.0,
+   68.0,
+   68.0
+  ]
+ },
+ "tutorial_1 | greedy_full_task": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "tutorial_1 | random_motion": {
+  "mean": 0.0,
+  "returns": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "tutorial_2 | self": {
+  "mean": 156.0,
+  "returns": [
+   156.0,
+   156.0,
+   156.0
+  ]
+ },
+ "tutorial_2 | greedy_full_task": {
+  "mean": 350.5,
+  "returns": [
+   506.0,
+   506.0,
+   506.0,
+   195.0,
+   195.0,
+   195.0
+  ]
+ },
+ "tutorial_2 | random_motion": {
+  "mean": 225.33333333333334,
+  "returns": [
+   234.0,
+   234.0,
+   234.0,
+   221.0,
+   208.0,
+   221.0
+  ]
+ },
+ "tutorial_3 | self": {
+  "mean": 156.0,
+  "returns": [
+   156.0,
+   156.0,
+   156.0
+  ]
+ },
+ "tutorial_3 | greedy_full_task": {
+  "mean": 350.5,
+  "returns": [
+   506.0,
+   506.0,
+   506.0,
+   195.0,
+   195.0,
+   195.0
+  ]
+ },
+ "tutorial_3 | random_motion": {
+  "mean": 225.33333333333334,
+  "returns": [
+   234.0,
+   234.0,
+   234.0,
+   221.0,
+   208.0,
+   221.0
+  ]
+ }
+}

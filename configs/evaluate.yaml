@@ -1,0 +1,49 @@
+seed: 67
+mode: evaluation
+environment:
+  layout_name: cramped_room
+  layout_file: null
+  horizon: 250
+  old_dynamics: true
+policies:
+  agent_0:
+    type: python_class
+    path: policies/template.py
+    class_name: StudentAgent
+    name: student_template
+    config:
+      action: stay
+    random_action_prob: 0.0
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+  agent_1:
+    type: builtin
+    name: greedy_full_task
+    ingredient: onion
+    avoid_teammate: true
+    random_action_prob: 0.0
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+execution:
+  num_episodes: 5
+  episode_seeds:
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  swap_agent_positions: true
+observation:
+  type: featurized
+  include_agent_index: true
+rendering:
+  mode: none
+  fps: 0
+  save_gif: false
+logging:
+  output_dir: outputs/evaluation_run
+  save_step_log: true
+  save_episode_summary: true
+  save_trajectory_pickle: false

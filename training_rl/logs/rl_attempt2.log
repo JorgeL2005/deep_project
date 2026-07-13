@@ -1,0 +1,19 @@
+[19:42:51] === PPO fine-tuning start (device=cuda, iters=400) ===
+[19:42:52] usable layouts: 57
+[19:43:10]   probe [bc-v3-init] mean_return=212.6 mean_max_idle=31.4 score=149.9
+[19:43:24] iter 5/400 ep_return~168.8 pi=0.000 v=0.160 ent=0.000 kl_bc=0.0000 (3.0s/it)
+[19:43:36] iter 10/400 ep_return~159.7 pi=0.000 v=0.167 ent=0.000 kl_bc=0.0000 (2.7s/it)
+[19:43:50] iter 15/400 ep_return~173.2 pi=0.000 v=0.741 ent=0.000 kl_bc=0.0000 (2.7s/it)
+[19:44:09] iter 20/400 ep_return~170.0 pi=-0.002 v=0.266 ent=0.395 kl_bc=0.0078 (3.0s/it)
+[19:44:26] iter 25/400 ep_return~168.8 pi=-0.025 v=0.290 ent=0.385 kl_bc=0.0289 (3.1s/it)
+[19:44:44] iter 30/400 ep_return~160.4 pi=-0.001 v=0.237 ent=0.367 kl_bc=0.0258 (3.1s/it)
+[19:45:00]   probe [iter30] mean_return=206.0 mean_max_idle=69.3 score=67.5
+[19:45:18] iter 35/400 ep_return~150.2 pi=0.015 v=0.285 ent=0.312 kl_bc=0.0441 (3.7s/it)
+[19:45:35] iter 40/400 ep_return~146.9 pi=0.016 v=0.324 ent=0.375 kl_bc=0.0609 (3.6s/it)
+[19:45:51] iter 45/400 ep_return~152.6 pi=-0.072 v=0.291 ent=0.364 kl_bc=0.0700 (3.6s/it)
+[19:46:08] iter 50/400 ep_return~159.5 pi=-0.003 v=0.311 ent=0.312 kl_bc=0.0753 (3.6s/it)
+[19:46:24] iter 55/400 ep_return~151.8 pi=-0.003 v=0.280 ent=0.426 kl_bc=0.1262 (3.5s/it)
+[19:46:39] iter 60/400 ep_return~142.6 pi=-0.002 v=0.276 ent=0.447 kl_bc=0.1644 (3.5s/it)
+[19:46:56]   probe [iter60] mean_return=183.8 mean_max_idle=66.2 score=51.4
+[19:47:13] iter 65/400 ep_return~131.1 pi=-0.002 v=0.227 ent=0.379 kl_bc=0.1301 (3.7s/it)
+[19:47:31] iter 70/400 ep_return~128.6 pi=-0.012 v=0.235 ent=0.496 kl_bc=0.1569 (3.7s/it)

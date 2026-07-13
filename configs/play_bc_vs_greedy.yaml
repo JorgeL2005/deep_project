@@ -1,0 +1,47 @@
+seed: 67
+mode: debug
+environment:
+  layout_name: asymmetric_advantages    # cambia aqui el layout que quieras ver
+  layout_file: null           # o pon una ruta .layout custom (y layout_name: null)
+  horizon: 400
+  old_dynamics: true
+policies:
+  agent_0:
+    type: python_class
+    path: policies/student_agent_bc.py
+    class_name: StudentAgent
+    name: student_bc
+    config:
+      seed: 0
+      weights: bc_weights_v5.npz
+    random_action_prob: 0.0
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+  agent_1:
+    type: builtin
+    name: greedy_full_task
+    ingredient: onion
+    avoid_teammate: true
+    random_action_prob: 0.0
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+execution:
+  num_episodes: 1
+  episode_seeds:
+  - 0
+  swap_agent_positions: true
+observation:
+  type: lossless_grid
+  include_agent_index: true
+rendering:
+  mode: window
+  fps: 8
+  window_caption: BC agent vs greedy
+  save_gif: false
+logging:
+  output_dir: outputs/play_bc_vs_greedy
+  save_step_log: false
+  save_episode_summary: true
+  save_trajectory_pickle: false

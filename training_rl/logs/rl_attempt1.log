@@ -1,0 +1,10 @@
+[19:38:39] === PPO fine-tuning start (device=cuda, iters=400) ===
+[19:38:40] usable layouts: 57
+[19:38:57]   probe [bc-v3-init] mean_return=212.6 mean_max_idle=31.4 score=149.9
+[19:39:17] iter 5/400 ep_return~170.0 pi=-0.026 v=0.272 ent=0.537 kl_bc=0.0392 (4.0s/it)
+[19:39:35] iter 10/400 ep_return~152.8 pi=-0.007 v=0.158 ent=0.364 kl_bc=0.0759 (3.8s/it)
+[19:39:55] iter 15/400 ep_return~176.4 pi=0.034 v=0.822 ent=0.338 kl_bc=0.2452 (3.9s/it)
+[19:40:18] iter 20/400 ep_return~161.1 pi=-0.005 v=0.223 ent=0.315 kl_bc=0.2288 (4.1s/it)
+[19:40:39] iter 25/400 ep_return~143.2 pi=0.000 v=0.182 ent=0.361 kl_bc=0.2912 (4.1s/it)
+[19:40:59] iter 30/400 ep_return~134.2 pi=-0.008 v=0.118 ent=0.376 kl_bc=0.2912 (4.1s/it)
+[19:41:15]   probe [iter30] mean_return=67.0 mean_max_idle=82.6 score=-98.2

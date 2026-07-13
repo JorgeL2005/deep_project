@@ -1,0 +1,102 @@
+[19:49:05] === PPO fine-tuning start (device=cuda, iters=400) ===
+[19:49:06] usable layouts: 57
+[19:49:24]   probe [bc-v3-init] mean_return=212.6 mean_max_idle=31.4 score=149.9
+[19:49:40] iter 5/400 ep_return~172.5 pi=0.000 v=0.191 ent=0.000 kl_bc=0.0000 (3.3s/it)
+[19:49:53] iter 10/400 ep_return~158.3 pi=0.000 v=0.198 ent=0.000 kl_bc=0.0000 (2.9s/it)
+[19:50:06] iter 15/400 ep_return~176.9 pi=0.000 v=0.980 ent=0.000 kl_bc=0.0000 (2.8s/it)
+[19:50:19] iter 20/400 ep_return~163.8 pi=0.000 v=0.222 ent=0.000 kl_bc=0.0000 (2.8s/it)
+[19:50:33] iter 25/400 ep_return~153.3 pi=0.000 v=0.249 ent=0.000 kl_bc=0.0000 (2.8s/it)
+[19:50:52] iter 30/400 ep_return~150.6 pi=-0.002 v=0.234 ent=0.505 kl_bc=0.0029 (2.9s/it)
+[19:51:09]   probe [iter30] mean_return=208.7 mean_max_idle=41.2 score=126.2
+[19:51:28] iter 35/400 ep_return~134.4 pi=-0.004 v=0.287 ent=0.447 kl_bc=0.0066 (3.5s/it)
+[19:51:45] iter 40/400 ep_return~136.1 pi=-0.022 v=0.301 ent=0.481 kl_bc=0.0143 (3.5s/it)
+[19:52:03] iter 45/400 ep_return~150.7 pi=0.026 v=0.282 ent=0.512 kl_bc=0.0209 (3.5s/it)
+[19:52:19] iter 50/400 ep_return~150.9 pi=-0.001 v=0.294 ent=0.425 kl_bc=0.0214 (3.5s/it)
+[19:52:33] iter 55/400 ep_return~148.1 pi=-0.005 v=0.295 ent=0.410 kl_bc=0.0246 (3.4s/it)
+[19:52:49] iter 60/400 ep_return~147.1 pi=-0.000 v=0.277 ent=0.461 kl_bc=0.0296 (3.4s/it)
+[19:53:05]   probe [iter60] mean_return=227.5 mean_max_idle=39.8 score=148.0
+[19:53:21] iter 65/400 ep_return~135.6 pi=-0.000 v=0.248 ent=0.387 kl_bc=0.0270 (3.6s/it)
+[19:53:38] iter 70/400 ep_return~139.4 pi=0.006 v=0.273 ent=0.430 kl_bc=0.0315 (3.6s/it)
+[19:53:57] iter 75/400 ep_return~169.5 pi=-0.019 v=0.864 ent=0.497 kl_bc=0.0663 (3.6s/it)
+[19:54:15] iter 80/400 ep_return~193.1 pi=0.003 v=0.413 ent=0.325 kl_bc=0.0559 (3.6s/it)
+[19:54:32] iter 85/400 ep_return~196.4 pi=0.001 v=0.326 ent=0.430 kl_bc=0.0691 (3.6s/it)
+[19:54:48] iter 90/400 ep_return~200.3 pi=-0.001 v=0.333 ent=0.429 kl_bc=0.0767 (3.6s/it)
+[19:55:05]   probe [iter90] mean_return=212.1 mean_max_idle=40.9 score=130.3
+[19:55:23] iter 95/400 ep_return~169.7 pi=0.012 v=0.324 ent=0.551 kl_bc=0.0805 (3.8s/it)
+[19:55:42] iter 100/400 ep_return~145.5 pi=0.001 v=0.293 ent=0.430 kl_bc=0.0616 (3.8s/it)
+[19:55:58] iter 105/400 ep_return~151.2 pi=0.003 v=0.299 ent=0.417 kl_bc=0.0836 (3.8s/it)
+[19:56:16] iter 110/400 ep_return~145.2 pi=-0.011 v=0.267 ent=0.512 kl_bc=0.0846 (3.7s/it)
+[19:56:33] iter 115/400 ep_return~141.2 pi=-0.005 v=0.266 ent=0.514 kl_bc=0.0836 (3.7s/it)
+[19:56:48] iter 120/400 ep_return~145.9 pi=0.002 v=0.266 ent=0.480 kl_bc=0.1330 (3.7s/it)
+[19:57:04]   probe [iter120] mean_return=201.0 mean_max_idle=43.4 score=114.2
+[19:57:21] iter 125/400 ep_return~142.3 pi=0.000 v=0.260 ent=0.529 kl_bc=0.1105 (3.8s/it)
+[19:57:37] iter 130/400 ep_return~146.0 pi=-0.000 v=0.435 ent=0.573 kl_bc=0.1313 (3.8s/it)
+[19:57:54] iter 135/400 ep_return~151.3 pi=-0.003 v=0.262 ent=0.525 kl_bc=0.1333 (3.8s/it)
+[19:58:12] iter 140/400 ep_return~174.0 pi=-0.001 v=0.754 ent=0.439 kl_bc=0.1400 (3.8s/it)
+[19:58:29] iter 145/400 ep_return~169.2 pi=-0.005 v=0.260 ent=0.469 kl_bc=0.1533 (3.8s/it)
+[19:58:45] iter 150/400 ep_return~160.2 pi=-0.000 v=0.262 ent=0.570 kl_bc=0.1442 (3.7s/it)
+[19:59:01]   probe [iter150] mean_return=205.6 mean_max_idle=41.4 score=122.9
+[19:59:20] iter 155/400 ep_return~162.7 pi=-0.020 v=0.224 ent=0.444 kl_bc=0.1427 (3.8s/it)
+[19:59:36] iter 160/400 ep_return~136.9 pi=0.000 v=0.226 ent=0.574 kl_bc=0.1746 (3.8s/it)
+[19:59:54] iter 165/400 ep_return~138.8 pi=0.000 v=0.255 ent=0.600 kl_bc=0.1597 (3.8s/it)
+[20:00:10] iter 170/400 ep_return~153.4 pi=-0.003 v=0.227 ent=0.471 kl_bc=0.2036 (3.8s/it)
+[20:00:26] iter 175/400 ep_return~153.4 pi=-0.001 v=0.257 ent=0.441 kl_bc=0.1585 (3.8s/it)
+[20:00:43] iter 180/400 ep_return~161.9 pi=-0.001 v=0.309 ent=0.476 kl_bc=0.1610 (3.8s/it)
+[20:01:00]   probe [iter180] mean_return=182.1 mean_max_idle=61.5 score=59.2
+[20:01:15] iter 185/400 ep_return~161.9 pi=-0.003 v=0.288 ent=0.388 kl_bc=0.1404 (3.8s/it)
+[20:01:33] iter 190/400 ep_return~158.8 pi=0.000 v=0.352 ent=0.493 kl_bc=0.2156 (3.8s/it)
+[20:01:51] iter 195/400 ep_return~155.8 pi=0.023 v=0.228 ent=0.500 kl_bc=0.1626 (3.8s/it)
+[20:02:08] iter 200/400 ep_return~154.1 pi=-0.000 v=0.210 ent=0.492 kl_bc=0.1724 (3.8s/it)
+[20:02:26] iter 205/400 ep_return~154.3 pi=0.001 v=0.230 ent=0.405 kl_bc=0.1688 (3.8s/it)
+[20:02:43] iter 210/400 ep_return~147.6 pi=0.013 v=0.239 ent=0.551 kl_bc=0.2030 (3.8s/it)
+[20:03:00]   probe [iter210] mean_return=183.9 mean_max_idle=56.1 score=71.6
+[20:03:18] iter 215/400 ep_return~145.1 pi=0.006 v=0.238 ent=0.561 kl_bc=0.2540 (3.9s/it)
+[20:03:38] iter 220/400 ep_return~139.7 pi=0.000 v=0.228 ent=0.506 kl_bc=0.2048 (3.9s/it)
+[20:03:55] iter 225/400 ep_return~162.2 pi=-0.001 v=0.565 ent=0.458 kl_bc=0.1887 (3.9s/it)
+[20:04:17] iter 230/400 ep_return~157.3 pi=-0.000 v=0.236 ent=0.459 kl_bc=0.2162 (3.9s/it)
+[20:04:35] iter 235/400 ep_return~176.6 pi=0.009 v=0.701 ent=0.605 kl_bc=0.2472 (3.9s/it)
+[20:04:52] iter 240/400 ep_return~176.9 pi=0.000 v=0.244 ent=0.521 kl_bc=0.2544 (3.9s/it)
+[20:05:09]   probe [iter240] mean_return=164.4 mean_max_idle=63.7 score=37.0
+[20:05:24] iter 245/400 ep_return~156.3 pi=-0.003 v=0.247 ent=0.468 kl_bc=0.2057 (3.9s/it)
+[20:05:44] iter 250/400 ep_return~162.3 pi=0.000 v=0.276 ent=0.515 kl_bc=0.2420 (3.9s/it)
+[20:06:02] iter 255/400 ep_return~160.6 pi=-0.001 v=0.295 ent=0.531 kl_bc=0.2421 (3.9s/it)
+[20:06:17] iter 260/400 ep_return~167.0 pi=0.005 v=0.324 ent=0.407 kl_bc=0.1889 (3.9s/it)
+[20:06:35] iter 265/400 ep_return~164.5 pi=-0.000 v=0.291 ent=0.518 kl_bc=0.2241 (3.9s/it)
+[20:06:51] iter 270/400 ep_return~167.9 pi=-0.000 v=0.310 ent=0.494 kl_bc=0.2507 (3.9s/it)
+[20:07:08]   probe [iter270] mean_return=190.9 mean_max_idle=49.2 score=92.5
+[20:07:25] iter 275/400 ep_return~158.9 pi=-0.000 v=0.332 ent=0.431 kl_bc=0.2122 (3.9s/it)
+[20:07:42] iter 280/400 ep_return~162.8 pi=-0.001 v=0.370 ent=0.509 kl_bc=0.2747 (3.9s/it)
+[20:07:59] iter 285/400 ep_return~156.9 pi=-0.000 v=0.235 ent=0.488 kl_bc=0.2481 (3.9s/it)
+[20:08:19] iter 290/400 ep_return~159.6 pi=0.005 v=0.257 ent=0.486 kl_bc=0.2276 (3.9s/it)
+[20:08:37] iter 295/400 ep_return~170.0 pi=-0.000 v=0.352 ent=0.483 kl_bc=0.2487 (3.9s/it)
+[20:08:53] iter 300/400 ep_return~160.4 pi=-0.001 v=0.246 ent=0.443 kl_bc=0.1991 (3.9s/it)
+[20:09:10]   probe [iter300] mean_return=179.2 mean_max_idle=33.1 score=113.0
+[20:09:27] iter 305/400 ep_return~169.9 pi=-0.000 v=0.239 ent=0.439 kl_bc=0.2223 (3.9s/it)
+[20:09:44] iter 310/400 ep_return~167.6 pi=0.001 v=0.367 ent=0.492 kl_bc=0.2779 (3.9s/it)
+[20:10:00] iter 315/400 ep_return~171.8 pi=-0.029 v=0.315 ent=0.418 kl_bc=0.2254 (3.9s/it)
+[20:10:16] iter 320/400 ep_return~177.8 pi=0.000 v=0.363 ent=0.523 kl_bc=0.2762 (3.9s/it)
+[20:10:31] iter 325/400 ep_return~173.5 pi=-0.000 v=0.310 ent=0.501 kl_bc=0.3160 (3.9s/it)
+[20:10:48] iter 330/400 ep_return~180.4 pi=-0.000 v=0.306 ent=0.480 kl_bc=0.2516 (3.9s/it)
+[20:11:05]   probe [iter330] mean_return=167.0 mean_max_idle=55.6 score=55.7
+[20:11:22] iter 335/400 ep_return~156.2 pi=-0.001 v=0.261 ent=0.497 kl_bc=0.2274 (3.9s/it)
+[20:11:40] iter 340/400 ep_return~175.5 pi=0.002 v=0.735 ent=0.500 kl_bc=0.2675 (3.9s/it)
+[20:11:58] iter 345/400 ep_return~171.1 pi=-0.001 v=0.288 ent=0.493 kl_bc=0.2607 (3.9s/it)
+[20:12:15] iter 350/400 ep_return~161.8 pi=-0.000 v=0.328 ent=0.575 kl_bc=0.2653 (3.9s/it)
+[20:12:33] iter 355/400 ep_return~166.9 pi=-0.001 v=0.268 ent=0.558 kl_bc=0.3137 (3.9s/it)
+[20:12:49] iter 360/400 ep_return~143.9 pi=-0.001 v=0.244 ent=0.498 kl_bc=0.2407 (3.9s/it)
+[20:13:06]   probe [iter360] mean_return=213.5 mean_max_idle=43.5 score=126.5
+[20:13:24] iter 365/400 ep_return~150.9 pi=0.011 v=0.341 ent=0.497 kl_bc=0.2996 (3.9s/it)
+[20:13:40] iter 370/400 ep_return~151.6 pi=-0.000 v=0.257 ent=0.537 kl_bc=0.2776 (3.9s/it)
+[20:13:59] iter 375/400 ep_return~165.0 pi=-0.001 v=0.310 ent=0.413 kl_bc=0.2199 (3.9s/it)
+[20:14:19] iter 380/400 ep_return~159.5 pi=0.009 v=0.273 ent=0.583 kl_bc=0.2860 (3.9s/it)
+[20:14:36] iter 385/400 ep_return~158.6 pi=0.001 v=0.221 ent=0.569 kl_bc=0.2490 (3.9s/it)
+[20:14:53] iter 390/400 ep_return~165.2 pi=-0.001 v=0.352 ent=0.433 kl_bc=0.2605 (3.9s/it)
+[20:15:10]   probe [iter390] mean_return=187.0 mean_max_idle=48.4 score=90.3
+[20:15:25] iter 395/400 ep_return~158.5 pi=-0.007 v=0.313 ent=0.554 kl_bc=0.2712 (4.0s/it)
+[20:15:41] iter 400/400 ep_return~161.8 pi=0.001 v=0.220 ent=0.518 kl_bc=0.2451 (3.9s/it)
+[20:15:57]   probe [final] mean_return=174.6 mean_max_idle=59.3 score=55.9
+[20:15:57] best checkpoint: bc-v3-init (score 149.9)
+[20:15:57] exported actor -> C:\Users\USER\DeepLearning\proyecto_deep\policies\rl_weights.npz
+[20:15:57] final evaluation of RL agent (official layouts)...
+[20:57:23] official matrix mean: 236.2
+[20:57:23] === RL pipeline done ===

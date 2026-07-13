@@ -1,0 +1,79 @@
+seed: 67
+mode: collect_demonstrations
+environment:
+  layout_name: cramped_room
+  layout_file: null
+  horizon: 250
+  old_dynamics: true
+policies:
+  agent_0:
+    type: builtin
+    name: greedy_full_task
+    ingredient: onion
+    avoid_teammate: true
+    random_action_prob: 0.0
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+  agent_1:
+    type: builtin
+    name: human_keyboard
+    max_action_time_ms: 0
+    invalid_action: stay
+    timeout_action: stay
+    keymap:
+      up:
+      - up
+      - w
+      down:
+      - down
+      - s
+      left:
+      - left
+      - a
+      right:
+      - right
+      - d
+      interact:
+      - space
+      - e
+      - return
+    priority:
+    - interact
+    - up
+    - down
+    - left
+    - right
+    - stay
+execution:
+  num_episodes: 1
+  episode_seeds:
+  - 67
+  swap_agent_positions: false
+observation:
+  type: featurized
+  include_agent_index: true
+rendering:
+  mode: window
+  fps: 5
+  window_caption: Overcooked-AI
+  save_gif: false
+  gif_path: outputs/demo_episode.gif
+  quit_keys:
+  - escape
+  - q
+logging:
+  output_dir: outputs/collect_demonstrations
+  save_step_log: true
+  save_episode_summary: true
+  save_trajectory_pickle: false
+data_collection:
+  enabled: true
+  record_agent_indices:
+  - 1
+  include_next_obs: true
+  include_info: false
+  output_dir: data/demonstrations
+  auto_name: true
+  overwrite: false
+  save_npz: true

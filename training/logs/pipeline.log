@@ -1,0 +1,680 @@
+[03:37:09] === BC/DAgger pipeline v2 start (device=cuda, frames=3) ===
+[03:37:09] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[03:37:09] usable layouts: 57
+[03:37:09] stage 1: generating teacher dataset (frame-stacked)...
+[03:37:23]   teacher data: 10/57 layouts, 48000 samples, 14s
+[03:37:38]   teacher data: 20/57 layouts, 96000 samples, 29s
+[03:37:51]   teacher data: 30/57 layouts, 144000 samples, 42s
+[03:38:05]   teacher data: 40/57 layouts, 192000 samples, 56s
+[03:38:20]   teacher data: 50/57 layouts, 240000 samples, 71s
+[03:38:38]   saved 273600 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter0_f3.npz
+[03:38:38] stage 2: BC training (iter 0)...
+[03:38:41]   dataset: 273600 samples, action histogram [39847, 28957, 36517, 36746, 50073, 81460]
+[03:39:26]   epoch 1/20 loss=1.1099 train_acc=0.641 val_acc=0.826
+[03:40:11]   epoch 2/20 loss=0.6259 train_acc=0.865 val_acc=0.878
+[03:40:57]   epoch 3/20 loss=0.5273 train_acc=0.901 val_acc=0.905
+[03:41:42]   epoch 4/20 loss=0.4765 train_acc=0.920 val_acc=0.908
+[03:42:27]   epoch 5/20 loss=0.4458 train_acc=0.931 val_acc=0.921
+[03:43:12]   epoch 6/20 loss=0.4225 train_acc=0.940 val_acc=0.928
+[03:43:57]   epoch 7/20 loss=0.4011 train_acc=0.948 val_acc=0.930
+[03:44:43]   epoch 8/20 loss=0.3883 train_acc=0.952 val_acc=0.935
+[03:45:29]   epoch 9/20 loss=0.3740 train_acc=0.958 val_acc=0.938
+[03:46:13]   epoch 10/20 loss=0.3636 train_acc=0.962 val_acc=0.937
+[03:46:59]   epoch 11/20 loss=0.3532 train_acc=0.966 val_acc=0.942
+[03:47:45]   epoch 12/20 loss=0.3429 train_acc=0.970 val_acc=0.943
+[03:48:30]   epoch 13/20 loss=0.3356 train_acc=0.973 val_acc=0.943
+[03:49:15]   epoch 14/20 loss=0.3294 train_acc=0.975 val_acc=0.945
+[03:50:00]   epoch 15/20 loss=0.3233 train_acc=0.978 val_acc=0.945
+[03:50:46]   epoch 16/20 loss=0.3183 train_acc=0.980 val_acc=0.945
+[03:51:32]   epoch 17/20 loss=0.3146 train_acc=0.981 val_acc=0.947
+[03:52:16]   epoch 18/20 loss=0.3117 train_acc=0.983 val_acc=0.946
+[03:53:02]   epoch 19/20 loss=0.3096 train_acc=0.983 val_acc=0.946
+[03:53:47]   epoch 20/20 loss=0.3084 train_acc=0.984 val_acc=0.946
+[03:53:58]   gameplay probe [iter0] mean return = 190.4
+[03:53:58] stage 3.1: DAgger rollouts (iter 1)...
+[03:54:38]   dagger data: 10/57 layouts, 28000 samples, 39s
+[03:55:19]   dagger data: 20/57 layouts, 56000 samples, 80s
+[03:55:58]   dagger data: 30/57 layouts, 84000 samples, 119s
+[03:56:36]   dagger data: 40/57 layouts, 112000 samples, 158s
+[03:57:17]   dagger data: 50/57 layouts, 140000 samples, 199s
+[03:57:50]   saved 159600 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter1_f3.npz
+[03:57:50] stage 3.1: retraining on aggregate (2 files)...
+[03:57:52]   dataset: 433200 samples, action histogram [64773, 54740, 61493, 64321, 73079, 114794]
+[03:59:03]   epoch 1/12 loss=1.0335 train_acc=0.668 val_acc=0.816
+[04:00:14]   epoch 2/12 loss=0.6505 train_acc=0.844 val_acc=0.863
+[04:01:24]   epoch 3/12 loss=0.5715 train_acc=0.874 val_acc=0.876
+[04:02:35]   epoch 4/12 loss=0.5286 train_acc=0.890 val_acc=0.885
+[04:03:45]   epoch 5/12 loss=0.4985 train_acc=0.901 val_acc=0.893
+[04:04:55]   epoch 6/12 loss=0.4742 train_acc=0.910 val_acc=0.897
+[04:06:06]   epoch 7/12 loss=0.4551 train_acc=0.918 val_acc=0.901
+[04:07:16]   epoch 8/12 loss=0.4376 train_acc=0.925 val_acc=0.906
+[04:08:26]   epoch 9/12 loss=0.4240 train_acc=0.930 val_acc=0.909
+[04:09:37]   epoch 10/12 loss=0.4119 train_acc=0.935 val_acc=0.910
+[04:10:47]   epoch 11/12 loss=0.4035 train_acc=0.939 val_acc=0.909
+[04:11:58]   epoch 12/12 loss=0.3983 train_acc=0.942 val_acc=0.910
+[04:12:10]   gameplay probe [iter1] mean return = 174.7
+[04:12:10] stage 3.2: DAgger rollouts (iter 2)...
+[04:12:50]   dagger data: 10/57 layouts, 28000 samples, 40s
+[04:13:31]   dagger data: 20/57 layouts, 56000 samples, 81s
+[04:14:10]   dagger data: 30/57 layouts, 84000 samples, 120s
+[04:14:49]   dagger data: 40/57 layouts, 112000 samples, 160s
+[04:15:30]   dagger data: 50/57 layouts, 140000 samples, 200s
+[04:16:03]   saved 159600 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter2_f3.npz
+[04:16:03] stage 3.2: retraining on aggregate (3 files)...
+[04:16:06]   dataset: 592800 samples, action histogram [91631, 76866, 85784, 88620, 98308, 151591]
+[04:17:43]   epoch 1/12 loss=0.9744 train_acc=0.692 val_acc=0.824
+[04:19:21]   epoch 2/12 loss=0.6373 train_acc=0.845 val_acc=0.860
+[04:20:57]   epoch 3/12 loss=0.5683 train_acc=0.871 val_acc=0.875
+[04:22:33]   epoch 4/12 loss=0.5291 train_acc=0.886 val_acc=0.881
+[04:24:08]   epoch 5/12 loss=0.4998 train_acc=0.897 val_acc=0.889
+[04:25:44]   epoch 6/12 loss=0.4762 train_acc=0.906 val_acc=0.894
+[04:27:20]   epoch 7/12 loss=0.4567 train_acc=0.913 val_acc=0.897
+[04:28:55]   epoch 8/12 loss=0.4397 train_acc=0.920 val_acc=0.898
+[04:30:31]   epoch 9/12 loss=0.4248 train_acc=0.926 val_acc=0.902
+[04:32:06]   epoch 10/12 loss=0.4129 train_acc=0.932 val_acc=0.904
+[04:33:42]   epoch 11/12 loss=0.4038 train_acc=0.936 val_acc=0.905
+[04:35:17]   epoch 12/12 loss=0.3984 train_acc=0.939 val_acc=0.906
+[04:35:28]   gameplay probe [iter2] mean return = 189.8
+[04:35:28] stage 3.3: DAgger rollouts (iter 3)...
+[04:36:05]   dagger data: 10/57 layouts, 28000 samples, 37s
+[04:36:44]   dagger data: 20/57 layouts, 56000 samples, 76s
+[04:37:21]   dagger data: 30/57 layouts, 84000 samples, 113s
+[04:37:58]   dagger data: 40/57 layouts, 112000 samples, 149s
+[04:38:36]   dagger data: 50/57 layouts, 140000 samples, 188s
+[04:39:07]   saved 159600 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter3_f3.npz
+[04:39:07] stage 3.3: retraining on aggregate (4 files)...
+[04:39:11]   dataset: 752400 samples, action histogram [117892, 98301, 110812, 112621, 122161, 190613]
+[04:41:12]   epoch 1/12 loss=0.9333 train_acc=0.711 val_acc=0.823
+[04:43:14]   epoch 2/12 loss=0.6390 train_acc=0.843 val_acc=0.853
+[04:45:15]   epoch 3/12 loss=0.5699 train_acc=0.869 val_acc=0.871
+[04:47:17]   epoch 4/12 loss=0.5288 train_acc=0.884 val_acc=0.878
+[04:49:18]   epoch 5/12 loss=0.4990 train_acc=0.896 val_acc=0.886
+[04:51:19]   epoch 6/12 loss=0.4749 train_acc=0.905 val_acc=0.892
+[04:53:20]   epoch 7/12 loss=0.4541 train_acc=0.913 val_acc=0.896
+[04:55:21]   epoch 8/12 loss=0.4362 train_acc=0.921 val_acc=0.899
+[04:57:23]   epoch 9/12 loss=0.4212 train_acc=0.927 val_acc=0.903
+[04:59:24]   epoch 10/12 loss=0.4086 train_acc=0.933 val_acc=0.905
+[05:01:25]   epoch 11/12 loss=0.3995 train_acc=0.937 val_acc=0.906
+[05:03:26]   epoch 12/12 loss=0.3939 train_acc=0.940 val_acc=0.907
+[05:03:37]   gameplay probe [iter3] mean return = 206.8
+[05:03:38] best checkpoint by gameplay: iter3 (score 206.8)
+[05:03:38] stage 4: exporting weights...
+[05:03:38]   numpy parity max abs err = 4.77e-06
+[05:03:38] stage 5: final evaluation of the exported numpy agent...
+[05:03:55]   eval cramped_room                   vs self               mean=  100.0
+[05:04:12]   eval cramped_room                   vs greedy_full_task   mean=   50.0
+[05:04:29]   eval cramped_room                   vs random_motion      mean=  153.3
+[05:04:46]   eval coordination_ring              vs self               mean=  160.0
+[05:05:03]   eval coordination_ring              vs greedy_full_task   mean=  210.0
+[05:05:20]   eval coordination_ring              vs random_motion      mean=   70.0
+[05:05:37]   eval counter_circuit                vs self               mean=  408.0
+[05:05:55]   eval counter_circuit                vs greedy_full_task   mean=  123.0
+[05:06:12]   eval counter_circuit                vs random_motion      mean=  132.5
+[05:06:29]   eval forced_coordination            vs self               mean=   60.0
+[05:06:46]   eval forced_coordination            vs greedy_full_task   mean=  100.0
+[05:07:04]   eval forced_coordination            vs random_motion      mean=    0.0
+[05:07:21]   eval asymmetric_advantages          vs self               mean=  180.0
+[05:07:38]   eval asymmetric_advantages          vs greedy_full_task   mean=  190.0
+[05:07:55]   eval asymmetric_advantages          vs random_motion      mean=  140.0
+[05:08:12]   eval large_room                     vs self               mean=  180.0
+[05:08:29]   eval large_room                     vs greedy_full_task   mean=  140.0
+[05:08:47]   eval large_room                     vs random_motion      mean=  126.7
+[05:09:04]   eval simple_o                       vs self               mean=  160.0
+[05:09:21]   eval simple_o                       vs greedy_full_task   mean=  220.0
+[05:09:38]   eval simple_o                       vs random_motion      mean=  170.0
+[05:09:55]   eval simple_tomato                  vs self               mean=   80.0
+[05:10:12]   eval simple_tomato                  vs greedy_full_task   mean=    0.0
+[05:10:29]   eval simple_tomato                  vs random_motion      mean=  156.7
+[05:10:46]   eval small_corridor                 vs self               mean=   20.0
+[05:11:04]   eval small_corridor                 vs greedy_full_task   mean=   20.0
+[05:11:21]   eval small_corridor                 vs random_motion      mean=   13.3
+[05:11:38]   eval soup_coordination              vs self               mean=  494.0
+[05:11:56]   eval soup_coordination              vs greedy_full_task   mean=  216.0
+[05:12:13]   eval soup_coordination              vs random_motion      mean=  385.7
+[05:12:30]   eval tutorial_0                     vs self               mean=  504.0
+[05:12:47]   eval tutorial_0                     vs greedy_full_task   mean=  472.5
+[05:13:05]   eval tutorial_0                     vs random_motion      mean=  315.0
+[05:13:22]   eval tutorial_1                     vs self               mean=  476.0
+[05:13:39]   eval tutorial_1                     vs greedy_full_task   mean=   85.0
+[05:13:56]   eval tutorial_1                     vs random_motion      mean=   45.3
+[05:14:14]   eval tutorial_2                     vs self               mean=  468.0
+[05:14:31]   eval tutorial_2                     vs greedy_full_task   mean=  474.5
+[05:14:49]   eval tutorial_2                     vs random_motion      mean=  229.7
+[05:15:06]   eval tutorial_3                     vs self               mean=  468.0
+[05:15:24]   eval tutorial_3                     vs greedy_full_task   mean=  474.5
+[05:15:41]   eval tutorial_3                     vs random_motion      mean=  229.7
+[05:15:41] === pipeline done ===
+[13:14:28] === v3 continued training start (device=cuda) ===
+[13:14:29] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[13:14:29] usable layouts: 57
+[13:14:45]   probe [v2-base] mean_return=198.2 mean_max_idle=69.0 score=60.1
+[13:14:45] v3 stage 4: DAgger rollouts (stuck_boost=4, weak x3)...
+[13:15:58]   dagger-v3: 10/57 layouts, 115192 samples, 73s
+[13:16:36]   dagger-v3: 20/57 layouts, 175380 samples, 111s
+[13:17:13]   dagger-v3: 30/57 layouts, 231052 samples, 148s
+[13:17:49]   dagger-v3: 40/57 layouts, 282340 samples, 184s
+[13:18:27]   dagger-v3: 50/57 layouts, 330940 samples, 222s
+[13:19:02]   saved 366956 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter4_f3.npz
+[13:19:02] v3 stage 4: fine-tuning on 3 files...
+[13:19:17]   dataset: 800156 samples, action histogram [119974, 101828, 109751, 109504, 103354, 255745]
+[13:21:26]   epoch 1/8 loss=0.4862 train_acc=0.903 val_acc=0.908
+[13:23:34]   epoch 2/8 loss=0.4526 train_acc=0.916 val_acc=0.914
+[13:25:41]   epoch 3/8 loss=0.4372 train_acc=0.923 val_acc=0.916
+[13:27:48]   epoch 4/8 loss=0.4252 train_acc=0.928 val_acc=0.917
+[13:30:06]   epoch 5/8 loss=0.4151 train_acc=0.932 val_acc=0.920
+[13:32:17]   epoch 6/8 loss=0.4067 train_acc=0.936 val_acc=0.921
+[13:34:28]   epoch 7/8 loss=0.4005 train_acc=0.939 val_acc=0.921
+[13:36:38]   epoch 8/8 loss=0.3965 train_acc=0.941 val_acc=0.922
+[13:36:53]   probe [iter4] mean_return=192.2 mean_max_idle=88.1 score=16.1
+[13:36:53] v3 stage 5: DAgger rollouts (stuck_boost=4, weak x3)...
+[13:38:06]   dagger-v3: 10/57 layouts, 114780 samples, 72s
+[13:38:43]   dagger-v3: 20/57 layouts, 177228 samples, 110s
+[13:39:19]   dagger-v3: 30/57 layouts, 233100 samples, 146s
+[13:39:55]   dagger-v3: 40/57 layouts, 281452 samples, 182s
+[13:40:32]   dagger-v3: 50/57 layouts, 332216 samples, 219s
+[13:41:07]   saved 370276 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter5_f3.npz
+[13:41:07] v3 stage 5: fine-tuning on 4 files...
+[13:41:13]   dataset: 1170432 samples, action histogram [168358, 157379, 159600, 159489, 131162, 394444]
+[13:44:19]   epoch 1/8 loss=0.4672 train_acc=0.912 val_acc=0.915
+[13:47:25]   epoch 2/8 loss=0.4459 train_acc=0.919 val_acc=0.917
+[13:50:30]   epoch 3/8 loss=0.4344 train_acc=0.924 val_acc=0.919
+[13:53:35]   epoch 4/8 loss=0.4243 train_acc=0.929 val_acc=0.922
+[13:56:41]   epoch 5/8 loss=0.4153 train_acc=0.933 val_acc=0.924
+[13:59:46]   epoch 6/8 loss=0.4074 train_acc=0.936 val_acc=0.924
+[14:02:51]   epoch 7/8 loss=0.4012 train_acc=0.939 val_acc=0.927
+[14:05:56]   epoch 8/8 loss=0.3973 train_acc=0.941 val_acc=0.927
+[14:06:12]   probe [iter5] mean_return=207.8 mean_max_idle=54.5 score=98.7
+[14:06:12] v3 stage 6: DAgger rollouts (stuck_boost=4, weak x3)...
+[14:07:25]   dagger-v3: 10/57 layouts, 108928 samples, 74s
+[14:08:04]   dagger-v3: 20/57 layouts, 168644 samples, 113s
+[14:08:41]   dagger-v3: 30/57 layouts, 223756 samples, 149s
+[14:09:18]   dagger-v3: 40/57 layouts, 271940 samples, 186s
+[14:09:55]   dagger-v3: 50/57 layouts, 319456 samples, 224s
+[14:10:30]   saved 357128 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter6_f3.npz
+[14:10:31] v3 stage 6: fine-tuning on 5 files...
+[14:10:38]   dataset: 1527560 samples, action histogram [214224, 213229, 205441, 201738, 159586, 533342]
+[14:14:41]   epoch 1/8 loss=0.4550 train_acc=0.917 val_acc=0.917
+[14:18:43]   epoch 2/8 loss=0.4410 train_acc=0.922 val_acc=0.916
+[14:22:45]   epoch 3/8 loss=0.4330 train_acc=0.925 val_acc=0.918
+[14:26:47]   epoch 4/8 loss=0.4245 train_acc=0.929 val_acc=0.922
+[14:30:49]   epoch 5/8 loss=0.4154 train_acc=0.933 val_acc=0.924
+[14:34:51]   epoch 6/8 loss=0.4083 train_acc=0.936 val_acc=0.926
+[14:38:54]   epoch 7/8 loss=0.4025 train_acc=0.938 val_acc=0.927
+[14:42:56]   epoch 8/8 loss=0.3987 train_acc=0.940 val_acc=0.928
+[14:43:11]   probe [iter6] mean_return=212.6 mean_max_idle=31.4 score=149.9
+[14:43:11] best v3 checkpoint: iter6 (return 212.6, idle 31.4)
+[14:43:12]   numpy parity max abs err = 7.63e-06
+[14:43:12] v3 final evaluation (exported v3 weights)...
+[14:43:28]   eval cramped_room                   vs self               mean=  200.0
+[14:43:45]   eval cramped_room                   vs greedy_full_task   mean=   60.0
+[14:44:02]   eval cramped_room                   vs random_motion      mean=  156.7
+[14:44:19]   eval coordination_ring              vs self               mean=  180.0
+[14:44:36]   eval coordination_ring              vs greedy_full_task   mean=  180.0
+[14:44:54]   eval coordination_ring              vs random_motion      mean=  106.7
+[14:45:11]   eval counter_circuit                vs self               mean=  136.0
+[14:45:28]   eval counter_circuit                vs greedy_full_task   mean=  191.0
+[14:45:45]   eval counter_circuit                vs random_motion      mean=  155.2
+[14:46:02]   eval forced_coordination            vs self               mean=  180.0
+[14:46:19]   eval forced_coordination            vs greedy_full_task   mean=  100.0
+[14:46:36]   eval forced_coordination            vs random_motion      mean=    0.0
+[14:46:53]   eval asymmetric_advantages          vs self               mean=  260.0
+[14:47:10]   eval asymmetric_advantages          vs greedy_full_task   mean=  190.0
+[14:47:27]   eval asymmetric_advantages          vs random_motion      mean=  160.0
+[14:47:44]   eval large_room                     vs self               mean=  100.0
+[14:48:01]   eval large_room                     vs greedy_full_task   mean=  140.0
+[14:48:18]   eval large_room                     vs random_motion      mean=  123.3
+[14:48:35]   eval simple_o                       vs self               mean=  180.0
+[14:48:52]   eval simple_o                       vs greedy_full_task   mean=  280.0
+[14:49:09]   eval simple_o                       vs random_motion      mean=  180.0
+[14:49:26]   eval simple_tomato                  vs self               mean=  200.0
+[14:49:43]   eval simple_tomato                  vs greedy_full_task   mean=   10.0
+[14:50:00]   eval simple_tomato                  vs random_motion      mean=  156.7
+[14:50:17]   eval small_corridor                 vs self               mean=   80.0
+[14:50:34]   eval small_corridor                 vs greedy_full_task   mean=   40.0
+[14:50:52]   eval small_corridor                 vs random_motion      mean=   16.7
+[14:51:09]   eval soup_coordination              vs self               mean=  572.0
+[14:51:26]   eval soup_coordination              vs greedy_full_task   mean=  381.0
+[14:51:44]   eval soup_coordination              vs random_motion      mean=  437.7
+[14:52:01]   eval tutorial_0                     vs self               mean=  567.0
+[14:52:18]   eval tutorial_0                     vs greedy_full_task   mean=  441.0
+[14:52:35]   eval tutorial_0                     vs random_motion      mean=  315.0
+[14:52:52]   eval tutorial_1                     vs self               mean=  510.0
+[14:53:09]   eval tutorial_1                     vs greedy_full_task   mean=  102.0
+[14:53:27]   eval tutorial_1                     vs random_motion      mean=  158.7
+[14:53:44]   eval tutorial_2                     vs self               mean=  468.0
+[14:54:01]   eval tutorial_2                     vs greedy_full_task   mean=  474.5
+[14:54:19]   eval tutorial_2                     vs random_motion      mean=  240.3
+[14:54:36]   eval tutorial_3                     vs self               mean=  468.0
+[14:54:53]   eval tutorial_3                     vs greedy_full_task   mean=  474.5
+[14:55:11]   eval tutorial_3                     vs random_motion      mean=  240.3
+[14:55:11] === v3 pipeline done ===
+[15:34:01] === v4 short round start (device=cuda) ===
+[15:34:01] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[15:34:16]   probe [v3-base] mean_return=212.6 mean_max_idle=31.4 score=149.9
+[15:34:16] v4 stage 7: DAgger rollouts (focus counter_circuit/large_room)...
+[15:35:19]   dagger-v4: 10/57 layouts, 88596 samples, 63s
+[15:35:51]   dagger-v4: 20/57 layouts, 139484 samples, 95s
+[15:36:22]   dagger-v4: 30/57 layouts, 183956 samples, 126s
+[15:36:53]   dagger-v4: 40/57 layouts, 225996 samples, 157s
+[15:37:25]   dagger-v4: 50/57 layouts, 265640 samples, 188s
+[15:37:54]   saved 297984 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter7_f3.npz
+[15:37:54] v4 stage 7: fine-tuning on 4 files...
+[15:38:01]   dataset: 1298988 samples, action histogram [169531, 179660, 171675, 164679, 128669, 484774]
+[15:41:36]   epoch 1/6 loss=0.4367 train_acc=0.928 val_acc=0.929
+[15:45:09]   epoch 2/6 loss=0.4207 train_acc=0.934 val_acc=0.930
+[15:48:37]   epoch 3/6 loss=0.4115 train_acc=0.937 val_acc=0.933
+[15:52:19]   epoch 4/6 loss=0.4032 train_acc=0.941 val_acc=0.934
+[15:55:45]   epoch 5/6 loss=0.3965 train_acc=0.944 val_acc=0.935
+[15:59:12]   epoch 6/6 loss=0.3920 train_acc=0.946 val_acc=0.937
+[15:59:27]   probe [iter7] mean_return=207.2 mean_max_idle=43.1 score=121.0
+[15:59:27] v4 stage 8: DAgger rollouts (focus counter_circuit/large_room)...
+[16:00:31]   dagger-v4: 10/57 layouts, 89648 samples, 64s
+[16:01:04]   dagger-v4: 20/57 layouts, 142096 samples, 97s
+[16:01:36]   dagger-v4: 30/57 layouts, 187036 samples, 129s
+[16:02:07]   dagger-v4: 40/57 layouts, 226600 samples, 160s
+[16:02:39]   dagger-v4: 50/57 layouts, 268096 samples, 192s
+[16:03:09]   saved 300576 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter8_f3.npz
+[16:03:09] v4 stage 8: fine-tuning on 5 files...
+[16:03:17]   dataset: 1599564 samples, action histogram [206688, 217031, 211833, 201053, 151735, 611224]
+[16:07:32]   epoch 1/6 loss=0.4338 train_acc=0.929 val_acc=0.928
+[16:11:57]   epoch 2/6 loss=0.4214 train_acc=0.934 val_acc=0.929
+[16:16:15]   epoch 3/6 loss=0.4129 train_acc=0.937 val_acc=0.930
+[16:20:44]   epoch 4/6 loss=0.4051 train_acc=0.941 val_acc=0.932
+[16:25:04]   epoch 5/6 loss=0.3984 train_acc=0.943 val_acc=0.934
+[16:29:26]   epoch 6/6 loss=0.3939 train_acc=0.946 val_acc=0.935
+[16:29:41]   probe [iter8] mean_return=199.4 mean_max_idle=31.8 score=135.8
+[16:29:41] best v4 checkpoint: v3-base
+[16:29:42]   numpy parity max abs err = 7.63e-06
+[16:29:42] v4 official-layout evaluation...
+[16:29:58]   [v4-official] cramped_room                                  vs self              mean=  126.7
+[16:30:16]   [v4-official] cramped_room                                  vs greedy_full_task  mean=   70.0
+[16:30:33]   [v4-official] cramped_room                                  vs random_motion     mean=  156.7
+[16:30:50]   [v4-official] coordination_ring                             vs self              mean=  133.3
+[16:31:08]   [v4-official] coordination_ring                             vs greedy_full_task  mean=  196.7
+[16:31:25]   [v4-official] coordination_ring                             vs random_motion     mean=  106.7
+[16:31:42]   [v4-official] counter_circuit                               vs self              mean=  589.3
+[16:31:59]   [v4-official] counter_circuit                               vs greedy_full_task  mean=  168.3
+[16:32:17]   [v4-official] counter_circuit                               vs random_motion     mean=  189.2
+[16:32:34]   [v4-official] forced_coordination                           vs self              mean=  113.3
+[16:32:51]   [v4-official] forced_coordination                           vs greedy_full_task  mean=  106.7
+[16:33:08]   [v4-official] forced_coordination                           vs random_motion     mean=    0.0
+[16:33:25]   [v4-official] asymmetric_advantages                         vs self              mean=  240.0
+[16:33:43]   [v4-official] asymmetric_advantages                         vs greedy_full_task  mean=  190.0
+[16:34:00]   [v4-official] asymmetric_advantages                         vs random_motion     mean=  156.7
+[16:34:17]   [v4-official] large_room                                    vs self              mean=  120.0
+[16:34:34]   [v4-official] large_room                                    vs greedy_full_task  mean=  140.0
+[16:34:52]   [v4-official] large_room                                    vs random_motion     mean=  126.7
+[16:35:09]   [v4-official] simple_o                                      vs self              mean=  140.0
+[16:35:26]   [v4-official] simple_o                                      vs greedy_full_task  mean=  280.0
+[16:35:43]   [v4-official] simple_o                                      vs random_motion     mean=  173.3
+[16:36:00]   [v4-official] simple_tomato                                 vs self              mean=  180.0
+[16:36:17]   [v4-official] simple_tomato                                 vs greedy_full_task  mean=    3.3
+[16:36:34]   [v4-official] simple_tomato                                 vs random_motion     mean=  156.7
+[16:36:51]   [v4-official] small_corridor                                vs self              mean=   73.3
+[16:37:08]   [v4-official] small_corridor                                vs greedy_full_task  mean=   53.3
+[16:37:25]   [v4-official] small_corridor                                vs random_motion     mean=   16.7
+[16:37:42]   [v4-official] soup_coordination                             vs self              mean=  528.7
+[16:38:00]   [v4-official] soup_coordination                             vs greedy_full_task  mean=  365.7
+[16:38:17]   [v4-official] soup_coordination                             vs random_motion     mean=  429.0
+[16:38:34]   [v4-official] tutorial_0                                    vs self              mean=  609.0
+[16:38:52]   [v4-official] tutorial_0                                    vs greedy_full_task  mean=  535.5
+[16:39:09]   [v4-official] tutorial_0                                    vs random_motion     mean=  315.0
+[16:39:26]   [v4-official] tutorial_1                                    vs self              mean=  537.0
+[16:39:43]   [v4-official] tutorial_1                                    vs greedy_full_task  mean=   79.3
+[16:40:00]   [v4-official] tutorial_1                                    vs random_motion     mean=  181.3
+[16:40:17]   [v4-official] tutorial_2                                    vs self              mean=  463.7
+[16:40:35]   [v4-official] tutorial_2                                    vs greedy_full_task  mean=  468.0
+[16:40:52]   [v4-official] tutorial_2                                    vs random_motion     mean=  234.5
+[16:41:09]   [v4-official] tutorial_3                                    vs self              mean=  463.7
+[16:41:27]   [v4-official] tutorial_3                                    vs greedy_full_task  mean=  468.0
+[16:41:44]   [v4-official] tutorial_3                                    vs random_motion     mean=  234.5
+[16:41:44] custom-map evaluation on 43 layouts (v3 then v4)...
+[16:42:01]   [v3-custom] 001_grabaciones_custom_dual_pots              vs self              mean=  306.7
+[16:42:18]   [v3-custom] 001_grabaciones_custom_dual_pots              vs greedy_full_task  mean=  303.3
+[16:42:35]   [v3-custom] 001_grabaciones_custom_zigzag_kitchen         vs self              mean=  213.3
+[16:42:52]   [v3-custom] 001_grabaciones_custom_zigzag_kitchen         vs greedy_full_task  mean=  210.0
+[16:43:09]   [v3-custom] Attention_t_Layouts_chavez_room               vs self              mean=  276.0
+[16:43:26]   [v3-custom] Attention_t_Layouts_chavez_room               vs greedy_full_task  mean=  266.0
+[16:43:43]   [v3-custom] Attention_t_Layouts_diagonal_run              vs self              mean=  108.0
+[16:44:01]   [v3-custom] Attention_t_Layouts_diagonal_run              vs greedy_full_task  mean=  181.5
+[16:44:17]   [v3-custom] Attention_t_Layouts_jamcy_room                vs self              mean=   94.0
+[16:44:35]   [v3-custom] Attention_t_Layouts_jamcy_room                vs greedy_full_task  mean=  298.3
+[16:44:52]   [v3-custom] Attention_t_Layouts_m_room                    vs self              mean=  313.3
+[16:45:09]   [v3-custom] Attention_t_Layouts_m_room                    vs greedy_full_task  mean=  229.3
+[16:45:26]   [v3-custom] BCSPN-TREE_layouts_cocina_abierta             vs self              mean=  220.0
+[16:45:43]   [v3-custom] BCSPN-TREE_layouts_cocina_abierta             vs greedy_full_task  mean=  166.7
+[16:46:00]   [v3-custom] BCSPN-TREE_layouts_dos_ollas                  vs self              mean=  306.7
+[16:46:17]   [v3-custom] BCSPN-TREE_layouts_dos_ollas                  vs greedy_full_task  mean=  246.7
+[16:46:34]   [v3-custom] BCSPN-TREE_layouts_duelo_1v1                  vs self              mean=  353.3
+[16:46:51]   [v3-custom] BCSPN-TREE_layouts_duelo_1v1                  vs greedy_full_task  mean=   53.3
+[16:47:08]   [v3-custom] BCSPN-TREE_layouts_isla_central               vs self              mean=  320.0
+[16:47:25]   [v3-custom] BCSPN-TREE_layouts_isla_central               vs greedy_full_task  mean=  226.7
+[16:47:42]   [v3-custom] BCSPN-TREE_layouts_sala_obstaculo             vs self              mean=  240.0
+[16:48:00]   [v3-custom] BCSPN-TREE_layouts_sala_obstaculo             vs greedy_full_task  mean=  126.7
+[16:48:17]   [v3-custom] Deep_Dynamite_Layout_custom_room              vs self              mean=  186.7
+[16:48:34]   [v3-custom] Deep_Dynamite_Layout_custom_room              vs greedy_full_task  mean=   96.7
+[16:48:51]   [v3-custom] Diealis_Pegalon_Army_layouts_cocina_redonda   vs self              mean=  266.7
+[16:49:08]   [v3-custom] Diealis_Pegalon_Army_layouts_cocina_redonda   vs greedy_full_task  mean=  163.3
+[16:49:25]   [v3-custom] Diealis_Pegalon_Army_layouts_custom_room      vs self              mean=  186.7
+[16:49:42]   [v3-custom] Diealis_Pegalon_Army_layouts_custom_room      vs greedy_full_task  mean=   96.7
+[16:49:59]   [v3-custom] Diealis_Pegalon_Army_layouts_doble_olla       vs self              mean=  246.7
+[16:50:16]   [v3-custom] Diealis_Pegalon_Army_layouts_doble_olla       vs greedy_full_task  mean=  260.0
+[16:50:33]   [v3-custom] Diealis_Pegalon_Army_layouts_esquina_l        vs self              mean=  266.7
+[16:50:50]   [v3-custom] Diealis_Pegalon_Army_layouts_esquina_l        vs greedy_full_task  mean=  223.3
+[16:51:07]   [v3-custom] Diealis_Pegalon_Army_layouts_mini_reto        vs self              mean=  186.7
+[16:51:24]   [v3-custom] Diealis_Pegalon_Army_layouts_mini_reto        vs greedy_full_task  mean=  176.7
+[16:51:41]   [v3-custom] Diealis_Pegalon_Army_layouts_salon_amplio     vs self              mean=  240.0
+[16:51:58]   [v3-custom] Diealis_Pegalon_Army_layouts_salon_amplio     vs greedy_full_task  mean=  110.0
+[16:52:15]   [v3-custom] Flauta_s_Company_custom_easy_coop             vs self              mean=  253.3
+[16:52:32]   [v3-custom] Flauta_s_Company_custom_easy_coop             vs greedy_full_task  mean=   50.0
+[16:52:49]   [v3-custom] Flauta_s_Company_custom_hallway               vs self              mean=  160.0
+[16:53:06]   [v3-custom] Flauta_s_Company_custom_hallway               vs greedy_full_task  mean=   90.0
+[16:53:23]   [v3-custom] Flauta_s_Company_custom_island                vs self              mean=  213.3
+[16:53:40]   [v3-custom] Flauta_s_Company_custom_island                vs greedy_full_task  mean=  170.0
+[16:53:57]   [v3-custom] Flauta_s_Company_custom_kitchen_sink          vs self              mean=  273.3
+[16:54:14]   [v3-custom] Flauta_s_Company_custom_kitchen_sink          vs greedy_full_task  mean=  260.0
+[16:54:31]   [v3-custom] Flauta_s_Company_custom_tomato_paradise       vs self              mean=  180.0
+[16:54:48]   [v3-custom] Flauta_s_Company_custom_tomato_paradise       vs greedy_full_task  mean=   30.0
+[16:55:05]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_01  vs self              mean=  160.0
+[16:55:22]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_01  vs greedy_full_task  mean=  136.7
+[16:55:39]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_02  vs self              mean=  100.0
+[16:55:56]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_02  vs greedy_full_task  mean=   86.7
+[16:56:13]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_03  vs self              mean=    0.0
+[16:56:30]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_03  vs greedy_full_task  mean=    0.0
+[16:56:47]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_04  vs self              mean=    0.0
+[16:57:04]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_04  vs greedy_full_task  mean=    0.0
+[16:57:21]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_05  vs self              mean=    0.0
+[16:57:38]   [v3-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_05  vs greedy_full_task  mean=    0.0
+[16:57:55]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_01    vs self              mean=  233.3
+[16:58:12]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_01    vs greedy_full_task  mean=  130.0
+[16:58:29]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_02    vs self              mean=    0.0
+[16:58:46]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_02    vs greedy_full_task  mean=   10.0
+[16:59:03]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_03    vs self              mean=  113.3
+[16:59:20]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_03    vs greedy_full_task  mean=  136.7
+[16:59:37]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_04    vs self              mean=  120.0
+[16:59:55]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_04    vs greedy_full_task  mean=  140.0
+[17:00:12]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_05    vs self              mean=  200.0
+[17:00:29]   [v3-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_05    vs greedy_full_task  mean=  193.3
+[17:00:46]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs self              mean=  180.0
+[17:01:03]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs greedy_full_task  mean=  156.7
+[17:01:20]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs self              mean=  200.0
+[17:01:37]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs greedy_full_task  mean=  196.7
+[17:01:54]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs self              mean=  160.0
+[17:02:11]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs greedy_full_task  mean=  153.3
+[17:02:28]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ha vs self              mean=    0.0
+[17:02:45]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ha vs greedy_full_task  mean=    0.0
+[17:03:02]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ha vs self              mean=  146.7
+[17:03:19]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ha vs greedy_full_task  mean=  150.0
+[17:03:36]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_e vs self              mean=  200.0
+[17:03:53]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_e vs greedy_full_task  mean=  180.0
+[17:04:10]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_e vs self              mean=   86.7
+[17:04:27]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_e vs greedy_full_task  mean=   63.3
+[17:04:44]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs self              mean=    0.0
+[17:05:01]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs greedy_full_task  mean=    0.0
+[17:05:18]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs self              mean=  100.0
+[17:05:35]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs greedy_full_task  mean=  106.7
+[17:05:52]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs self              mean=  180.0
+[17:06:09]   [v3-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs greedy_full_task  mean=   30.0
+[17:06:26]   [v4-custom] 001_grabaciones_custom_dual_pots              vs self              mean=  306.7
+[17:06:43]   [v4-custom] 001_grabaciones_custom_dual_pots              vs greedy_full_task  mean=  303.3
+[17:07:00]   [v4-custom] 001_grabaciones_custom_zigzag_kitchen         vs self              mean=  213.3
+[17:07:17]   [v4-custom] 001_grabaciones_custom_zigzag_kitchen         vs greedy_full_task  mean=  210.0
+[17:07:34]   [v4-custom] Attention_t_Layouts_chavez_room               vs self              mean=  276.0
+[17:07:51]   [v4-custom] Attention_t_Layouts_chavez_room               vs greedy_full_task  mean=  266.0
+[17:08:08]   [v4-custom] Attention_t_Layouts_diagonal_run              vs self              mean=  108.0
+[17:08:26]   [v4-custom] Attention_t_Layouts_diagonal_run              vs greedy_full_task  mean=  181.5
+[17:08:43]   [v4-custom] Attention_t_Layouts_jamcy_room                vs self              mean=   94.0
+[17:09:00]   [v4-custom] Attention_t_Layouts_jamcy_room                vs greedy_full_task  mean=  298.3
+[17:09:17]   [v4-custom] Attention_t_Layouts_m_room                    vs self              mean=  313.3
+[17:09:34]   [v4-custom] Attention_t_Layouts_m_room                    vs greedy_full_task  mean=  229.3
+[17:09:51]   [v4-custom] BCSPN-TREE_layouts_cocina_abierta             vs self              mean=  220.0
+[17:10:08]   [v4-custom] BCSPN-TREE_layouts_cocina_abierta             vs greedy_full_task  mean=  166.7
+[17:10:25]   [v4-custom] BCSPN-TREE_layouts_dos_ollas                  vs self              mean=  306.7
+[17:10:42]   [v4-custom] BCSPN-TREE_layouts_dos_ollas                  vs greedy_full_task  mean=  246.7
+[17:10:59]   [v4-custom] BCSPN-TREE_layouts_duelo_1v1                  vs self              mean=  353.3
+[17:11:16]   [v4-custom] BCSPN-TREE_layouts_duelo_1v1                  vs greedy_full_task  mean=   53.3
+[17:11:33]   [v4-custom] BCSPN-TREE_layouts_isla_central               vs self              mean=  320.0
+[17:11:51]   [v4-custom] BCSPN-TREE_layouts_isla_central               vs greedy_full_task  mean=  226.7
+[17:12:08]   [v4-custom] BCSPN-TREE_layouts_sala_obstaculo             vs self              mean=  240.0
+[17:12:25]   [v4-custom] BCSPN-TREE_layouts_sala_obstaculo             vs greedy_full_task  mean=  126.7
+[17:12:42]   [v4-custom] Deep_Dynamite_Layout_custom_room              vs self              mean=  186.7
+[17:12:59]   [v4-custom] Deep_Dynamite_Layout_custom_room              vs greedy_full_task  mean=   96.7
+[17:13:16]   [v4-custom] Diealis_Pegalon_Army_layouts_cocina_redonda   vs self              mean=  266.7
+[17:13:33]   [v4-custom] Diealis_Pegalon_Army_layouts_cocina_redonda   vs greedy_full_task  mean=  163.3
+[17:13:50]   [v4-custom] Diealis_Pegalon_Army_layouts_custom_room      vs self              mean=  186.7
+[17:14:07]   [v4-custom] Diealis_Pegalon_Army_layouts_custom_room      vs greedy_full_task  mean=   96.7
+[17:14:24]   [v4-custom] Diealis_Pegalon_Army_layouts_doble_olla       vs self              mean=  246.7
+[17:14:41]   [v4-custom] Diealis_Pegalon_Army_layouts_doble_olla       vs greedy_full_task  mean=  260.0
+[17:14:58]   [v4-custom] Diealis_Pegalon_Army_layouts_esquina_l        vs self              mean=  266.7
+[17:15:15]   [v4-custom] Diealis_Pegalon_Army_layouts_esquina_l        vs greedy_full_task  mean=  223.3
+[17:15:32]   [v4-custom] Diealis_Pegalon_Army_layouts_mini_reto        vs self              mean=  186.7
+[17:15:49]   [v4-custom] Diealis_Pegalon_Army_layouts_mini_reto        vs greedy_full_task  mean=  176.7
+[17:16:06]   [v4-custom] Diealis_Pegalon_Army_layouts_salon_amplio     vs self              mean=  240.0
+[17:16:23]   [v4-custom] Diealis_Pegalon_Army_layouts_salon_amplio     vs greedy_full_task  mean=  110.0
+[17:16:40]   [v4-custom] Flauta_s_Company_custom_easy_coop             vs self              mean=  253.3
+[17:16:58]   [v4-custom] Flauta_s_Company_custom_easy_coop             vs greedy_full_task  mean=   50.0
+[17:17:14]   [v4-custom] Flauta_s_Company_custom_hallway               vs self              mean=  160.0
+[17:17:32]   [v4-custom] Flauta_s_Company_custom_hallway               vs greedy_full_task  mean=   90.0
+[17:17:48]   [v4-custom] Flauta_s_Company_custom_island                vs self              mean=  213.3
+[17:18:06]   [v4-custom] Flauta_s_Company_custom_island                vs greedy_full_task  mean=  170.0
+[17:18:23]   [v4-custom] Flauta_s_Company_custom_kitchen_sink          vs self              mean=  273.3
+[17:18:40]   [v4-custom] Flauta_s_Company_custom_kitchen_sink          vs greedy_full_task  mean=  260.0
+[17:18:57]   [v4-custom] Flauta_s_Company_custom_tomato_paradise       vs self              mean=  180.0
+[17:19:14]   [v4-custom] Flauta_s_Company_custom_tomato_paradise       vs greedy_full_task  mean=   30.0
+[17:19:31]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_01  vs self              mean=  160.0
+[17:19:48]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_01  vs greedy_full_task  mean=  136.7
+[17:20:05]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_02  vs self              mean=  100.0
+[17:20:22]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_02  vs greedy_full_task  mean=   86.7
+[17:20:39]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_03  vs self              mean=    0.0
+[17:20:56]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_03  vs greedy_full_task  mean=    0.0
+[17:21:13]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_04  vs self              mean=    0.0
+[17:21:30]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_04  vs greedy_full_task  mean=    0.0
+[17:21:47]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_05  vs self              mean=    0.0
+[17:22:04]   [v4-custom] ReLu67_vs_ReLu69_layouts_guillermo_custom_05  vs greedy_full_task  mean=    0.0
+[17:22:21]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_01    vs self              mean=  233.3
+[17:22:38]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_01    vs greedy_full_task  mean=  130.0
+[17:22:55]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_02    vs self              mean=    0.0
+[17:23:12]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_02    vs greedy_full_task  mean=   10.0
+[17:23:29]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_03    vs self              mean=  113.3
+[17:23:46]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_03    vs greedy_full_task  mean=  136.7
+[17:24:03]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_04    vs self              mean=  120.0
+[17:24:21]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_04    vs greedy_full_task  mean=  140.0
+[17:24:38]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_05    vs self              mean=  200.0
+[17:24:55]   [v4-custom] ReLu67_vs_ReLu69_layouts_salinas_custom_05    vs greedy_full_task  mean=  193.3
+[17:25:12]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs self              mean=  180.0
+[17:25:29]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs greedy_full_task  mean=  156.7
+[17:25:46]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs self              mean=  200.0
+[17:26:03]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs greedy_full_task  mean=  196.7
+[17:26:20]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs self              mean=  160.0
+[17:26:37]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ea vs greedy_full_task  mean=  153.3
+[17:26:55]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ha vs self              mean=    0.0
+[17:27:12]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ha vs greedy_full_task  mean=    0.0
+[17:27:29]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ha vs self              mean=  146.7
+[17:27:46]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_ha vs greedy_full_task  mean=  150.0
+[17:28:03]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_e vs self              mean=  200.0
+[17:28:20]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_e vs greedy_full_task  mean=  180.0
+[17:28:37]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_e vs self              mean=   86.7
+[17:28:54]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_e vs greedy_full_task  mean=   63.3
+[17:29:11]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs self              mean=    0.0
+[17:29:28]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs greedy_full_task  mean=    0.0
+[17:29:45]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs self              mean=  100.0
+[17:30:02]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs greedy_full_task  mean=  106.7
+[17:30:19]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs self              mean=  180.0
+[17:30:36]   [v4-custom] SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_h vs greedy_full_task  mean=   30.0
+[17:30:36] custom-map means: v3=156.9  v4=156.9
+[17:30:36] === v4 pipeline done ===
+[19:38:04] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[19:38:40] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[19:42:51] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[19:49:06] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[20:16:56]   [rl-official] cramped_room                                  vs self              mean=  126.7
+[20:17:57]   [rl-official] cramped_room                                  vs greedy_full_task  mean=   70.0
+[20:18:57]   [rl-official] cramped_room                                  vs random_motion     mean=  156.7
+[20:19:57]   [rl-official] coordination_ring                             vs self              mean=  133.3
+[20:20:59]   [rl-official] coordination_ring                             vs greedy_full_task  mean=  196.7
+[20:22:00]   [rl-official] coordination_ring                             vs random_motion     mean=  106.7
+[20:23:01]   [rl-official] counter_circuit                               vs self              mean=  589.3
+[20:24:04]   [rl-official] counter_circuit                               vs greedy_full_task  mean=  168.3
+[20:25:05]   [rl-official] counter_circuit                               vs random_motion     mean=  189.2
+[20:26:05]   [rl-official] forced_coordination                           vs self              mean=  113.3
+[20:26:53]   [rl-official] forced_coordination                           vs greedy_full_task  mean=  106.7
+[20:27:25]   [rl-official] forced_coordination                           vs random_motion     mean=    0.0
+[20:28:16]   [rl-official] asymmetric_advantages                         vs self              mean=  240.0
+[20:29:18]   [rl-official] asymmetric_advantages                         vs greedy_full_task  mean=  190.0
+[20:30:19]   [rl-official] asymmetric_advantages                         vs random_motion     mean=  156.7
+[20:31:18]   [rl-official] large_room                                    vs self              mean=  120.0
+[20:32:20]   [rl-official] large_room                                    vs greedy_full_task  mean=  140.0
+[20:33:19]   [rl-official] large_room                                    vs random_motion     mean=  126.7
+[20:34:20]   [rl-official] simple_o                                      vs self              mean=  140.0
+[20:35:22]   [rl-official] simple_o                                      vs greedy_full_task  mean=  280.0
+[20:36:22]   [rl-official] simple_o                                      vs random_motion     mean=  173.3
+[20:37:23]   [rl-official] simple_tomato                                 vs self              mean=  180.0
+[20:38:15]   [rl-official] simple_tomato                                 vs greedy_full_task  mean=    3.3
+[20:39:14]   [rl-official] simple_tomato                                 vs random_motion     mean=  156.7
+[20:40:10]   [rl-official] small_corridor                                vs self              mean=   73.3
+[20:41:09]   [rl-official] small_corridor                                vs greedy_full_task  mean=   53.3
+[20:42:10]   [rl-official] small_corridor                                vs random_motion     mean=   16.7
+[20:43:11]   [rl-official] soup_coordination                             vs self              mean=  528.7
+[20:44:14]   [rl-official] soup_coordination                             vs greedy_full_task  mean=  365.7
+[20:45:16]   [rl-official] soup_coordination                             vs random_motion     mean=  429.0
+[20:46:16]   [rl-official] tutorial_0                                    vs self              mean=  609.0
+[20:47:18]   [rl-official] tutorial_0                                    vs greedy_full_task  mean=  535.5
+[20:48:18]   [rl-official] tutorial_0                                    vs random_motion     mean=  315.0
+[20:49:18]   [rl-official] tutorial_1                                    vs self              mean=  537.0
+[20:50:19]   [rl-official] tutorial_1                                    vs greedy_full_task  mean=   79.3
+[20:51:20]   [rl-official] tutorial_1                                    vs random_motion     mean=  181.3
+[20:52:21]   [rl-official] tutorial_2                                    vs self              mean=  463.7
+[20:53:25]   [rl-official] tutorial_2                                    vs greedy_full_task  mean=  468.0
+[20:54:26]   [rl-official] tutorial_2                                    vs random_motion     mean=  234.5
+[20:55:23]   [rl-official] tutorial_3                                    vs self              mean=  463.7
+[20:56:23]   [rl-official] tutorial_3                                    vs greedy_full_task  mean=  468.0
+[20:57:23]   [rl-official] tutorial_3                                    vs random_motion     mean=  234.5
+[22:15:45] === v5 competition-map specialization start (device=cuda) ===
+[22:15:45] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[22:16:13]   probe [v3-base] comp_ret=221.9 comp_idle=17.4 gen_ret=212.6 gen_idle=31.4 score=247.1
+[22:16:13] v5 stage 9: DAgger rollouts (competition maps x6)...
+[22:17:47]   dagger-v5: 10/57 layouts, 141472 samples, 94s
+[22:18:26]   dagger-v5: 20/57 layouts, 203244 samples, 133s
+[22:19:03]   dagger-v5: 30/57 layouts, 255308 samples, 170s
+[22:19:40]   dagger-v5: 40/57 layouts, 303684 samples, 207s
+[22:20:19]   dagger-v5: 50/57 layouts, 349636 samples, 246s
+[22:21:03]   saved 386400 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter9_f3.npz
+[22:21:03] v5 stage 9: fine-tuning on 5 files...
+[22:21:26]   dataset: 1757680 samples, action histogram [228439, 242213, 233524, 225237, 159536, 668731]
+[22:26:54]   epoch 1/8 loss=0.4385 train_acc=0.928 val_acc=0.931
+[22:32:18]   epoch 2/8 loss=0.4216 train_acc=0.934 val_acc=0.932
+[22:37:42]   epoch 3/8 loss=0.4118 train_acc=0.938 val_acc=0.934
+[22:43:12]   epoch 4/8 loss=0.4033 train_acc=0.942 val_acc=0.937
+[22:48:49]   epoch 5/8 loss=0.3954 train_acc=0.944 val_acc=0.939
+[22:54:22]   epoch 6/8 loss=0.3887 train_acc=0.947 val_acc=0.940
+[22:59:56]   epoch 7/8 loss=0.3835 train_acc=0.949 val_acc=0.941
+[23:05:33]   epoch 8/8 loss=0.3802 train_acc=0.951 val_acc=0.942
+[23:06:01]   probe [iter9] comp_ret=194.0 comp_idle=48.7 gen_ret=193.1 gen_idle=52.9 score=131.6
+[23:06:01] v5 stage 10: DAgger rollouts (competition maps x6)...
+[23:07:46]   dagger-v5: 10/57 layouts, 142332 samples, 105s
+[23:08:23]   dagger-v5: 20/57 layouts, 199724 samples, 142s
+[23:08:59]   dagger-v5: 30/57 layouts, 254368 samples, 178s
+[23:09:34]   dagger-v5: 40/57 layouts, 302820 samples, 214s
+[23:10:11]   dagger-v5: 50/57 layouts, 352772 samples, 250s
+[23:10:46]   saved 388548 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter10_f3.npz
+[23:10:46] v5 stage 10: fine-tuning on 5 files...
+[23:10:55]   dataset: 1775952 samples, action histogram [227051, 233265, 231995, 226423, 155692, 701526]
+[23:15:39]   epoch 1/8 loss=0.4271 train_acc=0.934 val_acc=0.936
+[23:20:24]   epoch 2/8 loss=0.4153 train_acc=0.938 val_acc=0.936
+[23:25:09]   epoch 3/8 loss=0.4075 train_acc=0.941 val_acc=0.937
+[23:30:00]   epoch 4/8 loss=0.4003 train_acc=0.944 val_acc=0.938
+[23:34:47]   epoch 5/8 loss=0.3932 train_acc=0.947 val_acc=0.939
+[23:39:30]   epoch 6/8 loss=0.3871 train_acc=0.949 val_acc=0.941
+[23:44:18]   epoch 7/8 loss=0.3820 train_acc=0.951 val_acc=0.942
+[23:49:06]   epoch 8/8 loss=0.3787 train_acc=0.953 val_acc=0.942
+[23:49:30]   probe [iter10] comp_ret=241.3 comp_idle=19.9 gen_ret=215.4 gen_idle=55.1 score=243.5
+[23:49:30] v5 stage 11: DAgger rollouts (competition maps x6)...
+[23:51:03]   dagger-v5: 10/57 layouts, 140708 samples, 92s
+[23:51:41]   dagger-v5: 20/57 layouts, 201584 samples, 130s
+[23:52:17]   dagger-v5: 30/57 layouts, 252432 samples, 167s
+[23:52:53]   dagger-v5: 40/57 layouts, 298552 samples, 203s
+[23:53:31]   dagger-v5: 50/57 layouts, 343476 samples, 240s
+[23:54:06]   saved 382276 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter11_f3.npz
+[23:54:07] v5 stage 11: fine-tuning on 5 files...
+[23:54:15]   dataset: 1801100 samples, action histogram [224879, 221937, 234063, 230759, 151636, 737826]
+[23:59:05]   epoch 1/8 loss=0.4133 train_acc=0.942 val_acc=0.943
+[00:03:53]   epoch 2/8 loss=0.4017 train_acc=0.946 val_acc=0.943
+[00:08:42]   epoch 3/8 loss=0.3946 train_acc=0.949 val_acc=0.945
+[00:13:58]   epoch 4/8 loss=0.3875 train_acc=0.951 val_acc=0.946
+[00:19:30]   epoch 5/8 loss=0.3808 train_acc=0.954 val_acc=0.948
+[00:25:17]   epoch 6/8 loss=0.3750 train_acc=0.956 val_acc=0.948
+[00:31:01]   epoch 7/8 loss=0.3702 train_acc=0.958 val_acc=0.949
+[00:36:36]   epoch 8/8 loss=0.3671 train_acc=0.959 val_acc=0.949
+[00:37:09]   probe [iter11] comp_ret=254.1 comp_idle=19.4 gen_ret=221.7 gen_idle=46.7 score=266.5
+[00:37:09] best v5 checkpoint: iter11
+[00:37:10]   numpy parity max abs err = 7.63e-06
+[00:37:10] v5 evaluation on competition maps (v3 first, then v5)...
+[00:37:40]   [v3-comp] asymmetric_advantages                         vs self              mean=  240.0
+[00:38:08]   [v3-comp] asymmetric_advantages                         vs greedy_full_task  mean=  190.0
+[00:38:36]   [v3-comp] asymmetric_advantages                         vs random_motion     mean=  156.7
+[00:39:06]   [v3-comp] asymmetric_advantages                         vs stay              mean=  160.0
+[00:39:34]   [v3-comp] coordination_ring                             vs self              mean=  133.3
+[00:40:00]   [v3-comp] coordination_ring                             vs greedy_full_task  mean=  196.7
+[00:40:33]   [v3-comp] coordination_ring                             vs random_motion     mean=  106.7
+[00:41:03]   [v3-comp] coordination_ring                             vs stay              mean=   46.7
+[00:41:43]   [v3-comp] counter_circuit                               vs self              mean=  589.3
+[00:42:13]   [v3-comp] counter_circuit                               vs greedy_full_task  mean=  168.3
+[00:42:40]   [v3-comp] counter_circuit                               vs random_motion     mean=  189.2
+[00:43:05]   [v3-comp] counter_circuit                               vs stay              mean=    0.0
+[00:43:37]   [v5-comp] asymmetric_advantages                         vs self              mean=  253.3
+[00:44:04]   [v5-comp] asymmetric_advantages                         vs greedy_full_task  mean=  183.3
+[00:44:32]   [v5-comp] asymmetric_advantages                         vs random_motion     mean=  163.3
+[00:44:57]   [v5-comp] asymmetric_advantages                         vs stay              mean=  160.0
+[00:45:26]   [v5-comp] coordination_ring                             vs self              mean=  180.0
+[00:45:48]   [v5-comp] coordination_ring                             vs greedy_full_task  mean=  236.7
+[00:46:16]   [v5-comp] coordination_ring                             vs random_motion     mean=  103.3
+[00:46:44]   [v5-comp] coordination_ring                             vs stay              mean=   63.3
+[00:47:08]   [v5-comp] counter_circuit                               vs self              mean=  566.7
+[00:47:40]   [v5-comp] counter_circuit                               vs greedy_full_task  mean=  252.5
+[00:48:06]   [v5-comp] counter_circuit                               vs random_motion     mean=  317.3
+[00:48:36]   [v5-comp] counter_circuit                               vs stay              mean=    0.0
+[00:48:36] v5 official-layout matrix (generality)...
+[00:49:02]   [v5-official] cramped_room                                  vs self              mean=  186.7
+[00:49:39]   [v5-official] cramped_room                                  vs greedy_full_task  mean=  183.3
+[00:50:14]   [v5-official] cramped_room                                  vs random_motion     mean=  146.7
+[00:50:39]   [v5-official] coordination_ring                             vs self              mean=  180.0
+[00:51:04]   [v5-official] coordination_ring                             vs greedy_full_task  mean=  236.7
+[00:51:30]   [v5-official] coordination_ring                             vs random_motion     mean=  103.3
+[00:51:54]   [v5-official] counter_circuit                               vs self              mean=  566.7
+[00:52:19]   [v5-official] counter_circuit                               vs greedy_full_task  mean=  252.5
+[00:52:44]   [v5-official] counter_circuit                               vs random_motion     mean=  317.3
+[00:53:08]   [v5-official] forced_coordination                           vs self              mean=  166.7
+[00:53:33]   [v5-official] forced_coordination                           vs greedy_full_task  mean=  103.3
+[00:53:56]   [v5-official] forced_coordination                           vs random_motion     mean=    0.0
+[00:54:23]   [v5-official] asymmetric_advantages                         vs self              mean=  253.3
+[00:54:49]   [v5-official] asymmetric_advantages                         vs greedy_full_task  mean=  183.3
+[00:55:18]   [v5-official] asymmetric_advantages                         vs random_motion     mean=  163.3
+[00:55:46]   [v5-official] large_room                                    vs self              mean=  146.7
+[00:56:11]   [v5-official] large_room                                    vs greedy_full_task  mean=  133.3
+[00:56:36]   [v5-official] large_room                                    vs random_motion     mean=  130.0
+[00:57:01]   [v5-official] simple_o                                      vs self              mean=  133.3
+[00:57:27]   [v5-official] simple_o                                      vs greedy_full_task  mean=  283.3
+[00:57:52]   [v5-official] simple_o                                      vs random_motion     mean=  146.7
+[00:58:18]   [v5-official] simple_tomato                                 vs self              mean=  153.3
+[00:58:40]   [v5-official] simple_tomato                                 vs greedy_full_task  mean=    0.0
+[00:59:05]   [v5-official] simple_tomato                                 vs random_motion     mean=  156.7
+[00:59:32]   [v5-official] small_corridor                                vs self              mean=   80.0
+[01:00:07]   [v5-official] small_corridor                                vs greedy_full_task  mean=   56.7
+[01:00:31]   [v5-official] small_corridor                                vs random_motion     mean=   16.7
+[01:00:56]   [v5-official] soup_coordination                             vs self              mean=  514.0
+[01:01:19]   [v5-official] soup_coordination                             vs greedy_full_task  mean=  274.3
+[01:01:47]   [v5-official] soup_coordination                             vs random_motion     mean=  459.3
+[01:02:08]   [v5-official] tutorial_0                                    vs self              mean=  630.0
+[01:02:43]   [v5-official] tutorial_0                                    vs greedy_full_task  mean=  525.0
+[01:03:36]   [v5-official] tutorial_0                                    vs random_motion     mean=  315.0
+[01:04:06]   [v5-official] tutorial_1                                    vs self              mean=  525.7
+[01:04:43]   [v5-official] tutorial_1                                    vs greedy_full_task  mean=   62.3
+[01:05:12]   [v5-official] tutorial_1                                    vs random_motion     mean=  136.0
+[01:05:32]   [v5-official] tutorial_2                                    vs self              mean=  463.7
+[01:05:58]   [v5-official] tutorial_2                                    vs greedy_full_task  mean=  475.8
+[01:06:24]   [v5-official] tutorial_2                                    vs random_motion     mean=  234.0
+[01:06:57]   [v5-official] tutorial_3                                    vs self              mean=  463.7
+[01:07:24]   [v5-official] tutorial_3                                    vs greedy_full_task  mean=  475.8
+[01:07:48]   [v5-official] tutorial_3                                    vs random_motion     mean=  234.0
+[01:07:48] competition-map means: v3=181.4  v5=206.7 | v5 official mean=244.5
+[01:07:48] === v5 pipeline done ===

@@ -1,0 +1,1640 @@
+{
+ "v3": {
+  "001_grabaciones_custom_dual_pots | self": {
+   "mean": 306.6666666666667,
+   "returns": [
+    300.0,
+    320.0,
+    300.0
+   ]
+  },
+  "001_grabaciones_custom_dual_pots | greedy_full_task": {
+   "mean": 303.3333333333333,
+   "returns": [
+    280.0,
+    320.0,
+    360.0,
+    280.0,
+    300.0,
+    280.0
+   ]
+  },
+  "001_grabaciones_custom_zigzag_kitchen | self": {
+   "mean": 213.33333333333334,
+   "returns": [
+    220.0,
+    200.0,
+    220.0
+   ]
+  },
+  "001_grabaciones_custom_zigzag_kitchen | greedy_full_task": {
+   "mean": 210.0,
+   "returns": [
+    180.0,
+    200.0,
+    180.0,
+    220.0,
+    240.0,
+    240.0
+   ]
+  },
+  "Attention_t_Layouts_chavez_room | self": {
+   "mean": 276.0,
+   "returns": [
+    268.0,
+    296.0,
+    264.0
+   ]
+  },
+  "Attention_t_Layouts_chavez_room | greedy_full_task": {
+   "mean": 266.0,
+   "returns": [
+    206.0,
+    296.0,
+    320.0,
+    270.0,
+    236.0,
+    268.0
+   ]
+  },
+  "Attention_t_Layouts_diagonal_run | self": {
+   "mean": 108.0,
+   "returns": [
+    180.0,
+    108.0,
+    36.0
+   ]
+  },
+  "Attention_t_Layouts_diagonal_run | greedy_full_task": {
+   "mean": 181.5,
+   "returns": [
+    213.0,
+    258.0,
+    84.0,
+    249.0,
+    165.0,
+    120.0
+   ]
+  },
+  "Attention_t_Layouts_jamcy_room | self": {
+   "mean": 94.0,
+   "returns": [
+    56.0,
+    114.0,
+    112.0
+   ]
+  },
+  "Attention_t_Layouts_jamcy_room | greedy_full_task": {
+   "mean": 298.3333333333333,
+   "returns": [
+    90.0,
+    386.0,
+    440.0,
+    292.0,
+    118.0,
+    464.0
+   ]
+  },
+  "Attention_t_Layouts_m_room | self": {
+   "mean": 313.3333333333333,
+   "returns": [
+    294.0,
+    322.0,
+    324.0
+   ]
+  },
+  "Attention_t_Layouts_m_room | greedy_full_task": {
+   "mean": 229.33333333333334,
+   "returns": [
+    298.0,
+    150.0,
+    60.0,
+    358.0,
+    210.0,
+    300.0
+   ]
+  },
+  "BCSPN-TREE_layouts_cocina_abierta | self": {
+   "mean": 220.0,
+   "returns": [
+    240.0,
+    200.0,
+    220.0
+   ]
+  },
+  "BCSPN-TREE_layouts_cocina_abierta | greedy_full_task": {
+   "mean": 166.66666666666666,
+   "returns": [
+    0.0,
+    160.0,
+    220.0,
+    240.0,
+    160.0,
+    220.0
+   ]
+  },
+  "BCSPN-TREE_layouts_dos_ollas | self": {
+   "mean": 306.6666666666667,
+   "returns": [
+    300.0,
+    320.0,
+    300.0
+   ]
+  },
+  "BCSPN-TREE_layouts_dos_ollas | greedy_full_task": {
+   "mean": 246.66666666666666,
+   "returns": [
+    280.0,
+    280.0,
+    240.0,
+    160.0,
+    280.0,
+    240.0
+   ]
+  },
+  "BCSPN-TREE_layouts_duelo_1v1 | self": {
+   "mean": 353.3333333333333,
+   "returns": [
+    340.0,
+    360.0,
+    360.0
+   ]
+  },
+  "BCSPN-TREE_layouts_duelo_1v1 | greedy_full_task": {
+   "mean": 53.333333333333336,
+   "returns": [
+    0.0,
+    80.0,
+    80.0,
+    0.0,
+    80.0,
+    80.0
+   ]
+  },
+  "BCSPN-TREE_layouts_isla_central | self": {
+   "mean": 320.0,
+   "returns": [
+    300.0,
+    320.0,
+    340.0
+   ]
+  },
+  "BCSPN-TREE_layouts_isla_central | greedy_full_task": {
+   "mean": 226.66666666666666,
+   "returns": [
+    240.0,
+    280.0,
+    160.0,
+    240.0,
+    280.0,
+    160.0
+   ]
+  },
+  "BCSPN-TREE_layouts_sala_obstaculo | self": {
+   "mean": 240.0,
+   "returns": [
+    240.0,
+    240.0,
+    240.0
+   ]
+  },
+  "BCSPN-TREE_layouts_sala_obstaculo | greedy_full_task": {
+   "mean": 126.66666666666667,
+   "returns": [
+    160.0,
+    160.0,
+    80.0,
+    120.0,
+    160.0,
+    80.0
+   ]
+  },
+  "Deep_Dynamite_Layout_custom_room | self": {
+   "mean": 186.66666666666666,
+   "returns": [
+    180.0,
+    180.0,
+    200.0
+   ]
+  },
+  "Deep_Dynamite_Layout_custom_room | greedy_full_task": {
+   "mean": 96.66666666666667,
+   "returns": [
+    140.0,
+    40.0,
+    40.0,
+    40.0,
+    200.0,
+    120.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_cocina_redonda | self": {
+   "mean": 266.6666666666667,
+   "returns": [
+    260.0,
+    260.0,
+    280.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_cocina_redonda | greedy_full_task": {
+   "mean": 163.33333333333334,
+   "returns": [
+    240.0,
+    200.0,
+    160.0,
+    140.0,
+    160.0,
+    80.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_custom_room | self": {
+   "mean": 186.66666666666666,
+   "returns": [
+    180.0,
+    180.0,
+    200.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_custom_room | greedy_full_task": {
+   "mean": 96.66666666666667,
+   "returns": [
+    140.0,
+    40.0,
+    40.0,
+    40.0,
+    200.0,
+    120.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_doble_olla | self": {
+   "mean": 246.66666666666666,
+   "returns": [
+    260.0,
+    240.0,
+    240.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_doble_olla | greedy_full_task": {
+   "mean": 260.0,
+   "returns": [
+    260.0,
+    280.0,
+    260.0,
+    220.0,
+    280.0,
+    260.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_esquina_l | self": {
+   "mean": 266.6666666666667,
+   "returns": [
+    280.0,
+    260.0,
+    260.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_esquina_l | greedy_full_task": {
+   "mean": 223.33333333333334,
+   "returns": [
+    300.0,
+    220.0,
+    60.0,
+    280.0,
+    240.0,
+    240.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_mini_reto | self": {
+   "mean": 186.66666666666666,
+   "returns": [
+    200.0,
+    160.0,
+    200.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_mini_reto | greedy_full_task": {
+   "mean": 176.66666666666666,
+   "returns": [
+    200.0,
+    200.0,
+    180.0,
+    200.0,
+    100.0,
+    180.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_salon_amplio | self": {
+   "mean": 240.0,
+   "returns": [
+    240.0,
+    240.0,
+    240.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_salon_amplio | greedy_full_task": {
+   "mean": 110.0,
+   "returns": [
+    120.0,
+    140.0,
+    100.0,
+    80.0,
+    80.0,
+    140.0
+   ]
+  },
+  "Flauta_s_Company_custom_easy_coop | self": {
+   "mean": 253.33333333333334,
+   "returns": [
+    260.0,
+    240.0,
+    260.0
+   ]
+  },
+  "Flauta_s_Company_custom_easy_coop | greedy_full_task": {
+   "mean": 50.0,
+   "returns": [
+    20.0,
+    0.0,
+    0.0,
+    200.0,
+    40.0,
+    40.0
+   ]
+  },
+  "Flauta_s_Company_custom_hallway | self": {
+   "mean": 160.0,
+   "returns": [
+    140.0,
+    180.0,
+    160.0
+   ]
+  },
+  "Flauta_s_Company_custom_hallway | greedy_full_task": {
+   "mean": 90.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    180.0,
+    180.0,
+    180.0
+   ]
+  },
+  "Flauta_s_Company_custom_island | self": {
+   "mean": 213.33333333333334,
+   "returns": [
+    140.0,
+    260.0,
+    240.0
+   ]
+  },
+  "Flauta_s_Company_custom_island | greedy_full_task": {
+   "mean": 170.0,
+   "returns": [
+    0.0,
+    160.0,
+    160.0,
+    240.0,
+    240.0,
+    220.0
+   ]
+  },
+  "Flauta_s_Company_custom_kitchen_sink | self": {
+   "mean": 273.3333333333333,
+   "returns": [
+    280.0,
+    260.0,
+    280.0
+   ]
+  },
+  "Flauta_s_Company_custom_kitchen_sink | greedy_full_task": {
+   "mean": 260.0,
+   "returns": [
+    160.0,
+    300.0,
+    160.0,
+    320.0,
+    280.0,
+    340.0
+   ]
+  },
+  "Flauta_s_Company_custom_tomato_paradise | self": {
+   "mean": 180.0,
+   "returns": [
+    180.0,
+    180.0,
+    180.0
+   ]
+  },
+  "Flauta_s_Company_custom_tomato_paradise | greedy_full_task": {
+   "mean": 30.0,
+   "returns": [
+    40.0,
+    40.0,
+    40.0,
+    20.0,
+    20.0,
+    20.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_01 | self": {
+   "mean": 160.0,
+   "returns": [
+    160.0,
+    140.0,
+    180.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_01 | greedy_full_task": {
+   "mean": 136.66666666666666,
+   "returns": [
+    160.0,
+    100.0,
+    140.0,
+    100.0,
+    160.0,
+    160.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_02 | self": {
+   "mean": 100.0,
+   "returns": [
+    120.0,
+    100.0,
+    80.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_02 | greedy_full_task": {
+   "mean": 86.66666666666667,
+   "returns": [
+    160.0,
+    80.0,
+    80.0,
+    160.0,
+    20.0,
+    20.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_03 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_03 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_04 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_04 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_05 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_05 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_01 | self": {
+   "mean": 233.33333333333334,
+   "returns": [
+    240.0,
+    240.0,
+    220.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_01 | greedy_full_task": {
+   "mean": 130.0,
+   "returns": [
+    140.0,
+    220.0,
+    140.0,
+    100.0,
+    160.0,
+    20.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_02 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_02 | greedy_full_task": {
+   "mean": 10.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    20.0,
+    20.0,
+    20.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_03 | self": {
+   "mean": 113.33333333333333,
+   "returns": [
+    100.0,
+    100.0,
+    140.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_03 | greedy_full_task": {
+   "mean": 136.66666666666666,
+   "returns": [
+    100.0,
+    140.0,
+    140.0,
+    100.0,
+    160.0,
+    180.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_04 | self": {
+   "mean": 120.0,
+   "returns": [
+    160.0,
+    140.0,
+    60.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_04 | greedy_full_task": {
+   "mean": 140.0,
+   "returns": [
+    160.0,
+    180.0,
+    80.0,
+    140.0,
+    140.0,
+    140.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_05 | self": {
+   "mean": 200.0,
+   "returns": [
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_05 | greedy_full_task": {
+   "mean": 193.33333333333334,
+   "returns": [
+    220.0,
+    140.0,
+    200.0,
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_1 | self": {
+   "mean": 180.0,
+   "returns": [
+    160.0,
+    200.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_1 | greedy_full_task": {
+   "mean": 156.66666666666666,
+   "returns": [
+    160.0,
+    120.0,
+    180.0,
+    200.0,
+    160.0,
+    120.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_2 | self": {
+   "mean": 200.0,
+   "returns": [
+    220.0,
+    180.0,
+    200.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_2 | greedy_full_task": {
+   "mean": 196.66666666666666,
+   "returns": [
+    200.0,
+    160.0,
+    220.0,
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_3 | self": {
+   "mean": 160.0,
+   "returns": [
+    200.0,
+    180.0,
+    100.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_3 | greedy_full_task": {
+   "mean": 153.33333333333334,
+   "returns": [
+    140.0,
+    160.0,
+    180.0,
+    100.0,
+    160.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_hard_1 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_hard_1 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_hard_2 | self": {
+   "mean": 146.66666666666666,
+   "returns": [
+    180.0,
+    80.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_hard_2 | greedy_full_task": {
+   "mean": 150.0,
+   "returns": [
+    140.0,
+    140.0,
+    160.0,
+    140.0,
+    160.0,
+    160.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_easy_1 | self": {
+   "mean": 200.0,
+   "returns": [
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_easy_1 | greedy_full_task": {
+   "mean": 180.0,
+   "returns": [
+    180.0,
+    200.0,
+    180.0,
+    160.0,
+    180.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_easy_2 | self": {
+   "mean": 86.66666666666667,
+   "returns": [
+    0.0,
+    100.0,
+    160.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_easy_2 | greedy_full_task": {
+   "mean": 63.333333333333336,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    160.0,
+    100.0,
+    120.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_1 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_1 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_2 | self": {
+   "mean": 100.0,
+   "returns": [
+    120.0,
+    40.0,
+    140.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_2 | greedy_full_task": {
+   "mean": 106.66666666666667,
+   "returns": [
+    140.0,
+    140.0,
+    140.0,
+    140.0,
+    40.0,
+    40.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_3 | self": {
+   "mean": 180.0,
+   "returns": [
+    180.0,
+    180.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_3 | greedy_full_task": {
+   "mean": 30.0,
+   "returns": [
+    40.0,
+    40.0,
+    40.0,
+    20.0,
+    20.0,
+    20.0
+   ]
+  }
+ },
+ "v4": {
+  "001_grabaciones_custom_dual_pots | self": {
+   "mean": 306.6666666666667,
+   "returns": [
+    300.0,
+    320.0,
+    300.0
+   ]
+  },
+  "001_grabaciones_custom_dual_pots | greedy_full_task": {
+   "mean": 303.3333333333333,
+   "returns": [
+    280.0,
+    320.0,
+    360.0,
+    280.0,
+    300.0,
+    280.0
+   ]
+  },
+  "001_grabaciones_custom_zigzag_kitchen | self": {
+   "mean": 213.33333333333334,
+   "returns": [
+    220.0,
+    200.0,
+    220.0
+   ]
+  },
+  "001_grabaciones_custom_zigzag_kitchen | greedy_full_task": {
+   "mean": 210.0,
+   "returns": [
+    180.0,
+    200.0,
+    180.0,
+    220.0,
+    240.0,
+    240.0
+   ]
+  },
+  "Attention_t_Layouts_chavez_room | self": {
+   "mean": 276.0,
+   "returns": [
+    268.0,
+    296.0,
+    264.0
+   ]
+  },
+  "Attention_t_Layouts_chavez_room | greedy_full_task": {
+   "mean": 266.0,
+   "returns": [
+    206.0,
+    296.0,
+    320.0,
+    270.0,
+    236.0,
+    268.0
+   ]
+  },
+  "Attention_t_Layouts_diagonal_run | self": {
+   "mean": 108.0,
+   "returns": [
+    180.0,
+    108.0,
+    36.0
+   ]
+  },
+  "Attention_t_Layouts_diagonal_run | greedy_full_task": {
+   "mean": 181.5,
+   "returns": [
+    213.0,
+    258.0,
+    84.0,
+    249.0,
+    165.0,
+    120.0
+   ]
+  },
+  "Attention_t_Layouts_jamcy_room | self": {
+   "mean": 94.0,
+   "returns": [
+    56.0,
+    114.0,
+    112.0
+   ]
+  },
+  "Attention_t_Layouts_jamcy_room | greedy_full_task": {
+   "mean": 298.3333333333333,
+   "returns": [
+    90.0,
+    386.0,
+    440.0,
+    292.0,
+    118.0,
+    464.0
+   ]
+  },
+  "Attention_t_Layouts_m_room | self": {
+   "mean": 313.3333333333333,
+   "returns": [
+    294.0,
+    322.0,
+    324.0
+   ]
+  },
+  "Attention_t_Layouts_m_room | greedy_full_task": {
+   "mean": 229.33333333333334,
+   "returns": [
+    298.0,
+    150.0,
+    60.0,
+    358.0,
+    210.0,
+    300.0
+   ]
+  },
+  "BCSPN-TREE_layouts_cocina_abierta | self": {
+   "mean": 220.0,
+   "returns": [
+    240.0,
+    200.0,
+    220.0
+   ]
+  },
+  "BCSPN-TREE_layouts_cocina_abierta | greedy_full_task": {
+   "mean": 166.66666666666666,
+   "returns": [
+    0.0,
+    160.0,
+    220.0,
+    240.0,
+    160.0,
+    220.0
+   ]
+  },
+  "BCSPN-TREE_layouts_dos_ollas | self": {
+   "mean": 306.6666666666667,
+   "returns": [
+    300.0,
+    320.0,
+    300.0
+   ]
+  },
+  "BCSPN-TREE_layouts_dos_ollas | greedy_full_task": {
+   "mean": 246.66666666666666,
+   "returns": [
+    280.0,
+    280.0,
+    240.0,
+    160.0,
+    280.0,
+    240.0
+   ]
+  },
+  "BCSPN-TREE_layouts_duelo_1v1 | self": {
+   "mean": 353.3333333333333,
+   "returns": [
+    340.0,
+    360.0,
+    360.0
+   ]
+  },
+  "BCSPN-TREE_layouts_duelo_1v1 | greedy_full_task": {
+   "mean": 53.333333333333336,
+   "returns": [
+    0.0,
+    80.0,
+    80.0,
+    0.0,
+    80.0,
+    80.0
+   ]
+  },
+  "BCSPN-TREE_layouts_isla_central | self": {
+   "mean": 320.0,
+   "returns": [
+    300.0,
+    320.0,
+    340.0
+   ]
+  },
+  "BCSPN-TREE_layouts_isla_central | greedy_full_task": {
+   "mean": 226.66666666666666,
+   "returns": [
+    240.0,
+    280.0,
+    160.0,
+    240.0,
+    280.0,
+    160.0
+   ]
+  },
+  "BCSPN-TREE_layouts_sala_obstaculo | self": {
+   "mean": 240.0,
+   "returns": [
+    240.0,
+    240.0,
+    240.0
+   ]
+  },
+  "BCSPN-TREE_layouts_sala_obstaculo | greedy_full_task": {
+   "mean": 126.66666666666667,
+   "returns": [
+    160.0,
+    160.0,
+    80.0,
+    120.0,
+    160.0,
+    80.0
+   ]
+  },
+  "Deep_Dynamite_Layout_custom_room | self": {
+   "mean": 186.66666666666666,
+   "returns": [
+    180.0,
+    180.0,
+    200.0
+   ]
+  },
+  "Deep_Dynamite_Layout_custom_room | greedy_full_task": {
+   "mean": 96.66666666666667,
+   "returns": [
+    140.0,
+    40.0,
+    40.0,
+    40.0,
+    200.0,
+    120.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_cocina_redonda | self": {
+   "mean": 266.6666666666667,
+   "returns": [
+    260.0,
+    260.0,
+    280.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_cocina_redonda | greedy_full_task": {
+   "mean": 163.33333333333334,
+   "returns": [
+    240.0,
+    200.0,
+    160.0,
+    140.0,
+    160.0,
+    80.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_custom_room | self": {
+   "mean": 186.66666666666666,
+   "returns": [
+    180.0,
+    180.0,
+    200.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_custom_room | greedy_full_task": {
+   "mean": 96.66666666666667,
+   "returns": [
+    140.0,
+    40.0,
+    40.0,
+    40.0,
+    200.0,
+    120.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_doble_olla | self": {
+   "mean": 246.66666666666666,
+   "returns": [
+    260.0,
+    240.0,
+    240.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_doble_olla | greedy_full_task": {
+   "mean": 260.0,
+   "returns": [
+    260.0,
+    280.0,
+    260.0,
+    220.0,
+    280.0,
+    260.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_esquina_l | self": {
+   "mean": 266.6666666666667,
+   "returns": [
+    280.0,
+    260.0,
+    260.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_esquina_l | greedy_full_task": {
+   "mean": 223.33333333333334,
+   "returns": [
+    300.0,
+    220.0,
+    60.0,
+    280.0,
+    240.0,
+    240.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_mini_reto | self": {
+   "mean": 186.66666666666666,
+   "returns": [
+    200.0,
+    160.0,
+    200.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_mini_reto | greedy_full_task": {
+   "mean": 176.66666666666666,
+   "returns": [
+    200.0,
+    200.0,
+    180.0,
+    200.0,
+    100.0,
+    180.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_salon_amplio | self": {
+   "mean": 240.0,
+   "returns": [
+    240.0,
+    240.0,
+    240.0
+   ]
+  },
+  "Diealis_Pegalon_Army_layouts_salon_amplio | greedy_full_task": {
+   "mean": 110.0,
+   "returns": [
+    120.0,
+    140.0,
+    100.0,
+    80.0,
+    80.0,
+    140.0
+   ]
+  },
+  "Flauta_s_Company_custom_easy_coop | self": {
+   "mean": 253.33333333333334,
+   "returns": [
+    260.0,
+    240.0,
+    260.0
+   ]
+  },
+  "Flauta_s_Company_custom_easy_coop | greedy_full_task": {
+   "mean": 50.0,
+   "returns": [
+    20.0,
+    0.0,
+    0.0,
+    200.0,
+    40.0,
+    40.0
+   ]
+  },
+  "Flauta_s_Company_custom_hallway | self": {
+   "mean": 160.0,
+   "returns": [
+    140.0,
+    180.0,
+    160.0
+   ]
+  },
+  "Flauta_s_Company_custom_hallway | greedy_full_task": {
+   "mean": 90.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    180.0,
+    180.0,
+    180.0
+   ]
+  },
+  "Flauta_s_Company_custom_island | self": {
+   "mean": 213.33333333333334,
+   "returns": [
+    140.0,
+    260.0,
+    240.0
+   ]
+  },
+  "Flauta_s_Company_custom_island | greedy_full_task": {
+   "mean": 170.0,
+   "returns": [
+    0.0,
+    160.0,
+    160.0,
+    240.0,
+    240.0,
+    220.0
+   ]
+  },
+  "Flauta_s_Company_custom_kitchen_sink | self": {
+   "mean": 273.3333333333333,
+   "returns": [
+    280.0,
+    260.0,
+    280.0
+   ]
+  },
+  "Flauta_s_Company_custom_kitchen_sink | greedy_full_task": {
+   "mean": 260.0,
+   "returns": [
+    160.0,
+    300.0,
+    160.0,
+    320.0,
+    280.0,
+    340.0
+   ]
+  },
+  "Flauta_s_Company_custom_tomato_paradise | self": {
+   "mean": 180.0,
+   "returns": [
+    180.0,
+    180.0,
+    180.0
+   ]
+  },
+  "Flauta_s_Company_custom_tomato_paradise | greedy_full_task": {
+   "mean": 30.0,
+   "returns": [
+    40.0,
+    40.0,
+    40.0,
+    20.0,
+    20.0,
+    20.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_01 | self": {
+   "mean": 160.0,
+   "returns": [
+    160.0,
+    140.0,
+    180.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_01 | greedy_full_task": {
+   "mean": 136.66666666666666,
+   "returns": [
+    160.0,
+    100.0,
+    140.0,
+    100.0,
+    160.0,
+    160.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_02 | self": {
+   "mean": 100.0,
+   "returns": [
+    120.0,
+    100.0,
+    80.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_02 | greedy_full_task": {
+   "mean": 86.66666666666667,
+   "returns": [
+    160.0,
+    80.0,
+    80.0,
+    160.0,
+    20.0,
+    20.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_03 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_03 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_04 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_04 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_05 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_guillermo_custom_05 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_01 | self": {
+   "mean": 233.33333333333334,
+   "returns": [
+    240.0,
+    240.0,
+    220.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_01 | greedy_full_task": {
+   "mean": 130.0,
+   "returns": [
+    140.0,
+    220.0,
+    140.0,
+    100.0,
+    160.0,
+    20.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_02 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_02 | greedy_full_task": {
+   "mean": 10.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    20.0,
+    20.0,
+    20.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_03 | self": {
+   "mean": 113.33333333333333,
+   "returns": [
+    100.0,
+    100.0,
+    140.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_03 | greedy_full_task": {
+   "mean": 136.66666666666666,
+   "returns": [
+    100.0,
+    140.0,
+    140.0,
+    100.0,
+    160.0,
+    180.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_04 | self": {
+   "mean": 120.0,
+   "returns": [
+    160.0,
+    140.0,
+    60.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_04 | greedy_full_task": {
+   "mean": 140.0,
+   "returns": [
+    160.0,
+    180.0,
+    80.0,
+    140.0,
+    140.0,
+    140.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_05 | self": {
+   "mean": 200.0,
+   "returns": [
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  "ReLu67_vs_ReLu69_layouts_salinas_custom_05 | greedy_full_task": {
+   "mean": 193.33333333333334,
+   "returns": [
+    220.0,
+    140.0,
+    200.0,
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_1 | self": {
+   "mean": 180.0,
+   "returns": [
+    160.0,
+    200.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_1 | greedy_full_task": {
+   "mean": 156.66666666666666,
+   "returns": [
+    160.0,
+    120.0,
+    180.0,
+    200.0,
+    160.0,
+    120.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_2 | self": {
+   "mean": 200.0,
+   "returns": [
+    220.0,
+    180.0,
+    200.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_2 | greedy_full_task": {
+   "mean": 196.66666666666666,
+   "returns": [
+    200.0,
+    160.0,
+    220.0,
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_3 | self": {
+   "mean": 160.0,
+   "returns": [
+    200.0,
+    180.0,
+    100.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_easy_3 | greedy_full_task": {
+   "mean": 153.33333333333334,
+   "returns": [
+    140.0,
+    160.0,
+    180.0,
+    100.0,
+    160.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_hard_1 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_hard_1 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_hard_2 | self": {
+   "mean": 146.66666666666666,
+   "returns": [
+    180.0,
+    80.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_onion_hard_2 | greedy_full_task": {
+   "mean": 150.0,
+   "returns": [
+    140.0,
+    140.0,
+    160.0,
+    140.0,
+    160.0,
+    160.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_easy_1 | self": {
+   "mean": 200.0,
+   "returns": [
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_easy_1 | greedy_full_task": {
+   "mean": 180.0,
+   "returns": [
+    180.0,
+    200.0,
+    180.0,
+    160.0,
+    180.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_easy_2 | self": {
+   "mean": 86.66666666666667,
+   "returns": [
+    0.0,
+    100.0,
+    160.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_easy_2 | greedy_full_task": {
+   "mean": 63.333333333333336,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    160.0,
+    100.0,
+    120.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_1 | self": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_1 | greedy_full_task": {
+   "mean": 0.0,
+   "returns": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_2 | self": {
+   "mean": 100.0,
+   "returns": [
+    120.0,
+    40.0,
+    140.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_2 | greedy_full_task": {
+   "mean": 106.66666666666667,
+   "returns": [
+    140.0,
+    140.0,
+    140.0,
+    140.0,
+    40.0,
+    40.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_3 | self": {
+   "mean": 180.0,
+   "returns": [
+    180.0,
+    180.0,
+    180.0
+   ]
+  },
+  "SQUEEZE_&_EXCITATIONNNNNNNNN_layouts_tomato_hard_3 | greedy_full_task": {
+   "mean": 30.0,
+   "returns": [
+    40.0,
+    40.0,
+    40.0,
+    20.0,
+    20.0,
+    20.0
+   ]
+  }
+ }
+}

@@ -1,0 +1,49 @@
+seed: 67
+mode: evaluation
+environment:
+  layout_name: cramped_room
+  layout_file: null
+  horizon: 400
+  old_dynamics: true
+policies:
+  agent_0:
+    type: python_class
+    path: policies/student_agent_bc.py
+    class_name: StudentAgent
+    name: student_bc
+    config:
+      seed: 0
+    random_action_prob: 0.0
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+  agent_1:
+    type: builtin
+    name: greedy_full_task
+    ingredient: onion
+    avoid_teammate: true
+    random_action_prob: 0.0
+    max_action_time_ms: 100
+    invalid_action: stay
+    timeout_action: stay
+execution:
+  num_episodes: 3
+  episode_seeds:
+  - 0
+  - 1
+  - 2
+  swap_agent_positions: true
+# The trained CNN consumes the lossless grid encoding. observation.type: state
+# also works (the agent computes the encoding itself from the raw state).
+observation:
+  type: lossless_grid
+  include_agent_index: true
+rendering:
+  mode: none
+  fps: 0
+  save_gif: false
+logging:
+  output_dir: outputs/evaluate_student_bc
+  save_step_log: false
+  save_episode_summary: true
+  save_trajectory_pickle: false

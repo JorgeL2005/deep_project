@@ -1,0 +1,105 @@
+[03:03:39] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[03:03:40] usable layouts: 57
+[03:03:54]   teacher data: 10/57 layouts, 48000 samples, 14s
+[03:04:10]   teacher data: 20/57 layouts, 96000 samples, 30s
+[03:04:25]   teacher data: 30/57 layouts, 144000 samples, 45s
+[03:04:40]   teacher data: 40/57 layouts, 192000 samples, 60s
+[03:04:59]   teacher data: 50/57 layouts, 240000 samples, 79s
+[03:05:16]   saved 273600 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter0.npz
+[03:05:16] teacher data done
+[03:06:15] === BC/DAgger pipeline start (device=cuda) ===
+[03:06:16] skip (build failed): Attention_t_Layouts_maze_kitchen.layout: ValueError("'recipe_values' incompatible with '<ingredient>_value'")
+[03:06:16] usable layouts: 57
+[03:06:16] stage 1: iter0.npz exists, reusing
+[03:06:16] stage 2: BC training (iter 0)...
+[03:06:27]   dataset: 273600 samples, action histogram [39847, 28957, 36517, 36746, 50073, 81460]
+[03:06:45]   epoch 1/10 loss=1.2459 train_acc=0.559 val_acc=0.712
+[03:07:04]   epoch 2/10 loss=0.8069 train_acc=0.778 val_acc=0.819
+[03:07:22]   epoch 3/10 loss=0.6763 train_acc=0.835 val_acc=0.844
+[03:07:41]   epoch 4/10 loss=0.6102 train_acc=0.862 val_acc=0.868
+[03:07:59]   epoch 5/10 loss=0.5681 train_acc=0.879 val_acc=0.870
+[03:08:18]   epoch 6/10 loss=0.5404 train_acc=0.890 val_acc=0.891
+[03:08:36]   epoch 7/10 loss=0.5185 train_acc=0.898 val_acc=0.892
+[03:08:55]   epoch 8/10 loss=0.5042 train_acc=0.903 val_acc=0.894
+[03:09:13]   epoch 9/10 loss=0.4947 train_acc=0.907 val_acc=0.902
+[03:09:32]   epoch 10/10 loss=0.4894 train_acc=0.910 val_acc=0.901
+[03:09:32] stage 3.1: DAgger rollouts (iter 1)...
+[03:10:10]   dagger data: 10/57 layouts, 28000 samples, 38s
+[03:10:47]   dagger data: 20/57 layouts, 56000 samples, 75s
+[03:11:22]   dagger data: 30/57 layouts, 84000 samples, 110s
+[03:11:58]   dagger data: 40/57 layouts, 112000 samples, 146s
+[03:12:34]   dagger data: 50/57 layouts, 140000 samples, 182s
+[03:13:01]   saved 159600 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter1.npz
+[03:13:01] stage 3.1: retraining on aggregate (2 files)...
+[03:13:02]   dataset: 433200 samples, action histogram [66758, 60315, 66274, 68661, 66352, 104840]
+[03:13:32]   epoch 1/8 loss=1.2094 train_acc=0.563 val_acc=0.725
+[03:14:01]   epoch 2/8 loss=0.8213 train_acc=0.759 val_acc=0.787
+[03:14:31]   epoch 3/8 loss=0.7173 train_acc=0.803 val_acc=0.818
+[03:15:00]   epoch 4/8 loss=0.6584 train_acc=0.825 val_acc=0.834
+[03:15:29]   epoch 5/8 loss=0.6223 train_acc=0.839 val_acc=0.837
+[03:15:59]   epoch 6/8 loss=0.5985 train_acc=0.848 val_acc=0.848
+[03:16:28]   epoch 7/8 loss=0.5813 train_acc=0.854 val_acc=0.852
+[03:16:57]   epoch 8/8 loss=0.5716 train_acc=0.859 val_acc=0.854
+[03:16:57] stage 3.2: DAgger rollouts (iter 2)...
+[03:17:32]   dagger data: 10/57 layouts, 28000 samples, 35s
+[03:18:09]   dagger data: 20/57 layouts, 56000 samples, 72s
+[03:18:44]   dagger data: 30/57 layouts, 84000 samples, 106s
+[03:19:19]   dagger data: 40/57 layouts, 112000 samples, 141s
+[03:19:55]   dagger data: 50/57 layouts, 140000 samples, 177s
+[03:20:21]   saved 159600 samples -> C:\Users\USER\DeepLearning\proyecto_deep\training\data\iter2.npz
+[03:20:22] stage 3.2: retraining on aggregate (3 files)...
+[03:20:22]   dataset: 592800 samples, action histogram [91736, 87396, 92621, 98230, 91281, 131536]
+[03:21:03]   epoch 1/8 loss=1.1743 train_acc=0.578 val_acc=0.716
+[03:21:43]   epoch 2/8 loss=0.8078 train_acc=0.761 val_acc=0.784
+[03:22:23]   epoch 3/8 loss=0.7074 train_acc=0.802 val_acc=0.805
+[03:23:07]   epoch 4/8 loss=0.6541 train_acc=0.822 val_acc=0.821
+[03:23:47]   epoch 5/8 loss=0.6202 train_acc=0.835 val_acc=0.833
+[03:24:28]   epoch 6/8 loss=0.5949 train_acc=0.845 val_acc=0.837
+[03:25:08]   epoch 7/8 loss=0.5776 train_acc=0.852 val_acc=0.842
+[03:25:49]   epoch 8/8 loss=0.5675 train_acc=0.857 val_acc=0.845
+[03:25:49] stage 4: exporting weights...
+[03:25:49]   numpy parity max abs err = 1.53e-05
+[03:25:49] stage 5: final evaluation of the exported numpy agent...
+[03:25:59]   eval cramped_room                   vs self               mean=  140.0
+[03:26:10]   eval cramped_room                   vs greedy_full_task   mean=  170.0
+[03:26:21]   eval cramped_room                   vs random_motion      mean=  136.7
+[03:26:31]   eval coordination_ring              vs self               mean=    0.0
+[03:26:42]   eval coordination_ring              vs greedy_full_task   mean=   20.0
+[03:26:53]   eval coordination_ring              vs random_motion      mean=    0.0
+[03:27:03]   eval counter_circuit                vs self               mean=    0.0
+[03:27:14]   eval counter_circuit                vs greedy_full_task   mean=   95.5
+[03:27:25]   eval counter_circuit                vs random_motion      mean=   56.7
+[03:27:36]   eval forced_coordination            vs self               mean=    0.0
+[03:27:47]   eval forced_coordination            vs greedy_full_task   mean=   20.0
+[03:27:57]   eval forced_coordination            vs random_motion      mean=    0.0
+[03:28:08]   eval asymmetric_advantages          vs self               mean=   40.0
+[03:28:19]   eval asymmetric_advantages          vs greedy_full_task   mean=    0.0
+[03:28:30]   eval asymmetric_advantages          vs random_motion      mean=  113.3
+[03:28:40]   eval large_room                     vs self               mean=   60.0
+[03:28:51]   eval large_room                     vs greedy_full_task   mean=   50.0
+[03:29:02]   eval large_room                     vs random_motion      mean=   66.7
+[03:29:12]   eval simple_o                       vs self               mean=    0.0
+[03:29:23]   eval simple_o                       vs greedy_full_task   mean=   80.0
+[03:29:34]   eval simple_o                       vs random_motion      mean=   90.0
+[03:29:44]   eval simple_tomato                  vs self               mean=   40.0
+[03:29:55]   eval simple_tomato                  vs greedy_full_task   mean=    0.0
+[03:30:06]   eval simple_tomato                  vs random_motion      mean=  133.3
+[03:30:16]   eval small_corridor                 vs self               mean=   20.0
+[03:30:27]   eval small_corridor                 vs greedy_full_task   mean=   20.0
+[03:30:38]   eval small_corridor                 vs random_motion      mean=    3.3
+[03:30:49]   eval soup_coordination              vs self               mean=  130.0
+[03:31:00]   eval soup_coordination              vs greedy_full_task   mean=  173.0
+[03:31:11]   eval soup_coordination              vs random_motion      mean=  342.3
+[03:31:22]   eval tutorial_0                     vs self               mean=  441.0
+[03:31:32]   eval tutorial_0                     vs greedy_full_task   mean=  630.0
+[03:31:43]   eval tutorial_0                     vs random_motion      mean=  210.0
+[03:31:53]   eval tutorial_1                     vs self               mean=   68.0
+[03:32:04]   eval tutorial_1                     vs greedy_full_task   mean=    0.0
+[03:32:15]   eval tutorial_1                     vs random_motion      mean=    0.0
+[03:32:25]   eval tutorial_2                     vs self               mean=  156.0
+[03:32:37]   eval tutorial_2                     vs greedy_full_task   mean=  350.5
+[03:32:48]   eval tutorial_2                     vs random_motion      mean=  225.3
+[03:32:59]   eval tutorial_3                     vs self               mean=  156.0
+[03:33:10]   eval tutorial_3                     vs greedy_full_task   mean=  350.5
+[03:33:21]   eval tutorial_3                     vs random_motion      mean=  225.3
+[03:33:21] === pipeline done ===
